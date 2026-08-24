@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://zhongsai-steelstructure.com/sitemap.xml

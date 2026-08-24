@@ -1,0 +1,45 @@
+# Python scripts (temporary generation/fix scripts)
+*.py
+
+# Temporary files
+*.tmp
+*.bak
+*.log
+
+# Wrangler / Cloudflare
+.wrangler/
+node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Admin data (sensitive)
+admin_data/
+
+# Zip files
+*.zip
+
+# Screenshots
+*screenshot*.png
+*screenshot*.jpg
+header-screenshot.png
+blog_error.png
+user_feedback_projects.png
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# JSON data files (if generated)
+# blog_articles_list.json
