@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -15,24 +15,36 @@
 .shipment-hero{background:linear-gradient(135deg,#0f1b2d 0%,#1a2d4a 100%);color:#fff;padding:80px 0 60px;text-align:center}
 .shipment-hero h1{font-size:2.5rem;margin-bottom:16px}
 .shipment-hero p{font-size:1.15rem;opacity:.85;max-width:700px;margin:0 auto}
-.shipment-timeline{max-width:900px;margin:0 auto;padding:60px 20px}
-.shipment-card{background:#fff;border-radius:16px;box-shadow:0 4px 24px rgba(0,0,0,.08);margin-bottom:40px;overflow:hidden;display:grid;grid-template-columns:1fr 1fr;gap:0}
-.shipment-card .img-wrap{position:relative;height:300px;overflow:hidden;background:#f0f0f0}
-.shipment-card .img-wrap img{width:100%;height:100%;object-fit:cover;display:block}
-.shipment-card .img-wrap .date-badge{position:absolute;top:16px;left:16px;background:rgba(255,165,0,.95);color:#fff;padding:6px 14px;border-radius:20px;font-size:.85rem;font-weight:600}
-.shipment-card .content{padding:32px}
-.shipment-card .content h3{font-size:1.4rem;margin-bottom:12px;color:#0f1b2d}
-.shipment-card .meta{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:16px}
-.shipment-card .meta span{background:#f0f4f8;padding:4px 12px;border-radius:6px;font-size:.85rem;color:#4a5568}
-.shipment-card .meta span .icon{margin-right:4px}
-.shipment-card .desc{color:#4a5568;line-height:1.7;font-size:.95rem}
+.shipment-stats{display:flex;justify-content:center;gap:40px;margin-top:32px;flex-wrap:wrap}
+.shipment-stats .stat{text-align:center}
+.shipment-stats .stat .num{font-size:2rem;font-weight:800;color:#f59e0b}
+.shipment-stats .stat .label{font-size:.9rem;opacity:.8}
+.shipment-timeline{max-width:1100px;margin:0 auto;padding:60px 20px}
+.shipment-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:28px}
+.shipment-card{background:#fff;border-radius:16px;box-shadow:0 4px 24px rgba(0,0,0,.08);overflow:hidden;transition:transform .3s ease,box-shadow .3s ease}
+.shipment-card:hover{transform:translateY(-4px);box-shadow:0 8px 32px rgba(0,0,0,.12)}
+.shipment-card .img-wrap{position:relative;height:220px;overflow:hidden;background:#f0f0f0}
+.shipment-card .img-wrap img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s ease}
+.shipment-card:hover .img-wrap img{transform:scale(1.05)}
+.shipment-card .img-wrap .date-badge{position:absolute;top:14px;left:14px;background:rgba(245,158,11,.95);color:#fff;padding:5px 12px;border-radius:20px;font-size:.8rem;font-weight:600;backdrop-filter:blur(4px)}
+.shipment-card .img-wrap .country-badge{position:absolute;top:14px;right:14px;background:rgba(15,27,45,.85);color:#fff;padding:5px 12px;border-radius:20px;font-size:.8rem;font-weight:600;backdrop-filter:blur(4px)}
+.shipment-card .content{padding:24px}
+.shipment-card .content h3{font-size:1.2rem;margin-bottom:10px;color:#0f1b2d;font-weight:700}
+.shipment-card .meta{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px}
+.shipment-card .meta span{background:#f0f4f8;padding:3px 10px;border-radius:6px;font-size:.78rem;color:#4a5568;font-weight:500}
+.shipment-card .meta span .icon{margin-right:3px}
+.shipment-card .desc{color:#4a5568;line-height:1.65;font-size:.9rem;margin:0}
 .shipment-cta{text-align:center;padding:40px 20px 80px}
 .shipment-cta h2{font-size:1.8rem;margin-bottom:12px;color:#0f1b2d}
 .shipment-cta p{color:#4a5568;margin-bottom:24px}
+/* Fix rotated image */
+.img-rotate-90{transform:rotate(90deg) scale(1.35) !important;transform-origin:center center}
 @media(max-width:768px){
-.shipment-card{grid-template-columns:1fr}
+.shipment-grid{grid-template-columns:1fr}
 .shipment-hero h1{font-size:1.8rem}
 .shipment-hero{padding:60px 0 40px}
+.shipment-stats{gap:24px}
+.shipment-stats .stat .num{font-size:1.5rem}
 }
 </style>
 
@@ -303,23 +315,164 @@ src="https://www.facebook.com/tr?id=1803600767696432&ev=PageView&noscript=1"
 <span></span><span></span><span></span>
 </button>
 </div>
-</div></header><section class="shipment-hero"><div class="container"><h1>Shipment Gallery — Loading Updates</h1><p>Real container loading photos from our factory. Every shipment is quality-inspected and professionally packed before export. See our production capacity in action.</p></div></section><div class="shipment-timeline"><div class="shipment-card">
+</div></header><section class="shipment-hero"><div class="container"><h1>Shipment Gallery — Loading Updates</h1><p>Real container loading photos from our factory. Every shipment is quality-inspected and professionally packed before export. See our production capacity in action.</p>
+<div class="shipment-stats">
+<div class="stat"><div class="num">700+</div><div class="label">Containers/Year</div></div>
+<div class="stat"><div class="num">60+</div><div class="label">Countries</div></div>
+<div class="stat"><div class="num">100K</div><div class="label">Tons Capacity</div></div>
+<div class="stat"><div class="num">20 Days</div><div class="label">Lead Time</div></div>
+</div>
+</div></section><div class="shipment-timeline"><div class="shipment-grid">
+
+<div class="shipment-card">
 <div class="img-wrap">
-<picture>
-        <source srcset="../images/shipments/2026-08-21-loading-01.webp" type="image/webp">
-        <img src="../images/shipments/2026-08-21-loading-01.jpg" alt="Steel Warehouse Structure loading to Africa">
-    </picture>
+<img src="../images/shipments/2026-08-21-loading-01.jpg" alt="Steel Warehouse Structure loading to Africa" loading="lazy">
 <span class="date-badge">📅 2026-08-21</span>
+<span class="country-badge">🌍 Africa</span>
 </div>
 <div class="content">
-<h3>Steel Warehouse Structure → Africa</h3>
+<h3>Steel Warehouse → Africa</h3>
 <div class="meta">
-<span><span class="icon">🌍</span>Africa</span>
-<span><span class="icon">🏗️</span>Steel Warehouse Structure</span>
+<span><span class="icon">🏗️</span>Steel Warehouse</span>
 <span><span class="icon">📦</span>2 x 40HQ</span>
 </div>
 <p class="desc">Two 40HQ containers loaded with prefab steel warehouse components. All members marked and packed for easy on-site assembly.</p>
 </div>
+</div>
+
+<div class="shipment-card">
+<div class="img-wrap">
+<picture>
+        <source srcset="../images/container-loading.webp" type="image/webp">
+        <img src="../images/container-loading.jpg" alt="Steel Factory Building loading to Saudi Arabia" loading="lazy">
+    </picture>
+<span class="date-badge">📅 2026-08-15</span>
+<span class="country-badge">🇸🇦 Saudi Arabia</span>
+</div>
+<div class="content">
+<h3>Steel Factory Building → Saudi Arabia</h3>
+<div class="meta">
+<span><span class="icon">🏭</span>Factory Building</span>
+<span><span class="icon">📦</span>3 x 40HQ</span>
+</div>
+<p class="desc">Saudi manufacturing facility project with H-section columns, beams and purlins. Designed for high temperature and sandy environment. Three 40HQ containers.</p>
+</div>
+</div>
+
+<div class="shipment-card">
+<div class="img-wrap">
+<picture>
+        <source srcset="../images/factory-yard-1.webp" type="image/webp">
+        <img src="../images/factory-yard-1.jpg" alt="Steel Workshop loading to Malaysia" loading="lazy">
+    </picture>
+<span class="date-badge">📅 2026-08-10</span>
+<span class="country-badge">🇲🇾 Malaysia</span>
+</div>
+<div class="content">
+<h3>Steel Workshop → Malaysia</h3>
+<div class="meta">
+<span><span class="icon">🏗️</span>Steel Workshop</span>
+<span><span class="icon">📦</span>2 x 40HQ</span>
+</div>
+<p class="desc">Malaysia logistics warehouse workshop with crane beam design. CIDB certified standard. Two 40HQ containers shipped as full container load.</p>
+</div>
+</div>
+
+<div class="shipment-card">
+<div class="img-wrap">
+<picture>
+        <source srcset="../images/factory-interior-1.webp" type="image/webp">
+        <img src="../images/factory-interior-1.jpg" alt="Mining Plant loading to Indonesia" loading="lazy">
+    </picture>
+<span class="date-badge">📅 2026-08-05</span>
+<span class="country-badge">🇮🇩 Indonesia</span>
+</div>
+<div class="content">
+<h3>Mining Processing Plant → Indonesia</h3>
+<div class="meta">
+<span><span class="icon">⛏️</span>Mining Building</span>
+<span><span class="icon">📦</span>4 x 40HQ</span>
+</div>
+<p class="desc">Indonesia mineral processing plant project with large-span heavy steel structure, including equipment platform and conveyor gallery. Four 40HQ containers.</p>
+</div>
+</div>
+
+<div class="shipment-card">
+<div class="img-wrap">
+<picture>
+        <source srcset="../images/factory-welding.webp" type="image/webp">
+        <img src="../images/factory-welding.jpg" alt="Commercial Building loading to Brazil" loading="lazy">
+    </picture>
+<span class="date-badge">📅 2026-07-28</span>
+<span class="country-badge">🇧🇷 Brazil</span>
+</div>
+<div class="content">
+<h3>Commercial Supermarket → Brazil</h3>
+<div class="meta">
+<span><span class="icon">🏢</span>Commercial Building</span>
+<span><span class="icon">📦</span>2 x 40HQ</span>
+</div>
+<p class="desc">Brazil Chinese supermarket project with large-span column-free space design, including mezzanine structure. Two 40HQ containers shipped as FCL.</p>
+</div>
+</div>
+
+<div class="shipment-card">
+<div class="img-wrap">
+<picture>
+        <source srcset="../images/agricultural-barn.webp" type="image/webp">
+        <img src="../images/agricultural-barn.jpg" alt="Dairy Farm loading to Kenya" loading="lazy">
+    </picture>
+<span class="date-badge">📅 2026-07-20</span>
+<span class="country-badge">🇰🇪 Kenya</span>
+</div>
+<div class="content">
+<h3>Dairy Farm Building → Kenya</h3>
+<div class="meta">
+<span><span class="icon">🐄</span>Agricultural</span>
+<span><span class="icon">📦</span>1 x 40HQ</span>
+</div>
+<p class="desc">Kenya dairy farm project with light steel cow barn structure, including ventilation and shading design. One 40HQ container shipped as FCL.</p>
+</div>
+</div>
+
+<div class="shipment-card">
+<div class="img-wrap">
+<picture>
+        <source srcset="../images/workshop-asia.webp" type="image/webp">
+        <img src="../images/workshop-asia.jpg" alt="Logistics Warehouse loading to Vietnam" loading="lazy">
+    </picture>
+<span class="date-badge">📅 2026-07-15</span>
+<span class="country-badge">🇻🇳 Vietnam</span>
+</div>
+<div class="content">
+<h3>Logistics Center Warehouse → Vietnam</h3>
+<div class="meta">
+<span><span class="icon">📦</span>Logistics</span>
+<span><span class="icon">📦</span>2 x 40HQ</span>
+</div>
+<p class="desc">Vietnam logistics center project with large-span warehouse and loading dock, fire-resistant coating treatment. Two 40HQ containers shipped as FCL.</p>
+</div>
+</div>
+
+<div class="shipment-card">
+<div class="img-wrap">
+<picture>
+        <source srcset="../images/middle-east-construction.webp" type="image/webp">
+        <img src="../images/middle-east-construction.jpg" alt="Auto Parts Factory loading to Mexico" loading="lazy">
+    </picture>
+<span class="date-badge">📅 2026-07-10</span>
+<span class="country-badge">🇲🇽 Mexico</span>
+</div>
+<div class="content">
+<h3>Auto Parts Factory → Mexico</h3>
+<div class="meta">
+<span><span class="icon">🏭</span>Manufacturing</span>
+<span><span class="icon">📦</span>3 x 40HQ</span>
+</div>
+<p class="desc">Mexico auto parts factory project including office area and production workshop, earthquake-resistant design. Three 40HQ containers shipped in batches.</p>
+</div>
+</div>
+
 </div></div><section class="shipment-cta"><div class="container"><h2>Ready to Ship Your Project?</h2><p>From design to container loading — we handle every step. Get a free quote within 24 hours.</p><a href="contact.html" class="btn btn-accent btn-lg">Get Free Quote →</a></div></section><footer><div class="container">
 <div class="footer-grid">
 <div class="footer-brand">

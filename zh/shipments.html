@@ -15,24 +15,36 @@
 .shipment-hero{background:linear-gradient(135deg,#0f1b2d 0%,#1a2d4a 100%);color:#fff;padding:80px 0 60px;text-align:center}
 .shipment-hero h1{font-size:2.5rem;margin-bottom:16px}
 .shipment-hero p{font-size:1.15rem;opacity:.85;max-width:700px;margin:0 auto}
-.shipment-timeline{max-width:900px;margin:0 auto;padding:60px 20px}
-.shipment-card{background:#fff;border-radius:16px;box-shadow:0 4px 24px rgba(0,0,0,.08);margin-bottom:40px;overflow:hidden;display:grid;grid-template-columns:1fr 1fr;gap:0}
-.shipment-card .img-wrap{position:relative;height:300px;overflow:hidden;background:#f0f0f0}
-.shipment-card .img-wrap img{width:100%;height:100%;object-fit:cover;display:block}
-.shipment-card .img-wrap .date-badge{position:absolute;top:16px;left:16px;background:rgba(255,165,0,.95);color:#fff;padding:6px 14px;border-radius:20px;font-size:.85rem;font-weight:600}
-.shipment-card .content{padding:32px}
-.shipment-card .content h3{font-size:1.4rem;margin-bottom:12px;color:#0f1b2d}
-.shipment-card .meta{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:16px}
-.shipment-card .meta span{background:#f0f4f8;padding:4px 12px;border-radius:6px;font-size:.85rem;color:#4a5568}
-.shipment-card .meta span .icon{margin-right:4px}
-.shipment-card .desc{color:#4a5568;line-height:1.7;font-size:.95rem}
+.shipment-stats{display:flex;justify-content:center;gap:40px;margin-top:32px;flex-wrap:wrap}
+.shipment-stats .stat{text-align:center}
+.shipment-stats .stat .num{font-size:2rem;font-weight:800;color:#f59e0b}
+.shipment-stats .stat .label{font-size:.9rem;opacity:.8}
+.shipment-timeline{max-width:1100px;margin:0 auto;padding:60px 20px}
+.shipment-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:28px}
+.shipment-card{background:#fff;border-radius:16px;box-shadow:0 4px 24px rgba(0,0,0,.08);overflow:hidden;transition:transform .3s ease,box-shadow .3s ease}
+.shipment-card:hover{transform:translateY(-4px);box-shadow:0 8px 32px rgba(0,0,0,.12)}
+.shipment-card .img-wrap{position:relative;height:220px;overflow:hidden;background:#f0f0f0}
+.shipment-card .img-wrap img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s ease}
+.shipment-card:hover .img-wrap img{transform:scale(1.05)}
+.shipment-card .img-wrap .date-badge{position:absolute;top:14px;left:14px;background:rgba(245,158,11,.95);color:#fff;padding:5px 12px;border-radius:20px;font-size:.8rem;font-weight:600;backdrop-filter:blur(4px)}
+.shipment-card .img-wrap .country-badge{position:absolute;top:14px;right:14px;background:rgba(15,27,45,.85);color:#fff;padding:5px 12px;border-radius:20px;font-size:.8rem;font-weight:600;backdrop-filter:blur(4px)}
+.shipment-card .content{padding:24px}
+.shipment-card .content h3{font-size:1.2rem;margin-bottom:10px;color:#0f1b2d;font-weight:700}
+.shipment-card .meta{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px}
+.shipment-card .meta span{background:#f0f4f8;padding:3px 10px;border-radius:6px;font-size:.78rem;color:#4a5568;font-weight:500}
+.shipment-card .meta span .icon{margin-right:3px}
+.shipment-card .desc{color:#4a5568;line-height:1.65;font-size:.9rem;margin:0}
 .shipment-cta{text-align:center;padding:40px 20px 80px}
 .shipment-cta h2{font-size:1.8rem;margin-bottom:12px;color:#0f1b2d}
 .shipment-cta p{color:#4a5568;margin-bottom:24px}
+/* 修正横向图片 */
+.img-rotate-90{transform:rotate(90deg) scale(1.35) !important;transform-origin:center center}
 @media(max-width:768px){
-.shipment-card{grid-template-columns:1fr}
+.shipment-grid{grid-template-columns:1fr}
 .shipment-hero h1{font-size:1.8rem}
 .shipment-hero{padding:60px 0 40px}
+.shipment-stats{gap:24px}
+.shipment-stats .stat .num{font-size:1.5rem}
 }
 </style>
 
@@ -303,23 +315,164 @@ src="https://www.facebook.com/tr?id=1803600767696432&ev=PageView&noscript=1"
 <span></span><span></span><span></span>
 </button>
 </div>
-</div></header><section class="shipment-hero"><div class="container"><h1>出货动态 — 装柜实拍</h1><p>来自中赛钢构工厂的真实装柜照片。每一批货物出口前均经过质量检验和专业打包，见证我们的生产实力。</p></div></section><div class="shipment-timeline"><div class="shipment-card">
+</div></header><section class="shipment-hero"><div class="container"><h1>出货动态 — 装柜实拍</h1><p>来自中赛钢构工厂的真实装柜照片。每一批货物出口前均经过质量检验和专业打包，见证我们的生产实力。</p>
+<div class="shipment-stats">
+<div class="stat"><div class="num">700+</div><div class="label">年出口集装箱</div></div>
+<div class="stat"><div class="num">60+</div><div class="label">出口国家</div></div>
+<div class="stat"><div class="num">10万</div><div class="label">吨年产能</div></div>
+<div class="stat"><div class="num">20天</div><div class="label">常规交期</div></div>
+</div>
+</div></section><div class="shipment-timeline"><div class="shipment-grid">
+
+<div class="shipment-card">
 <div class="img-wrap">
-<picture>
-        <source srcset="../images/shipments/2026-08-21-loading-01.webp" type="image/webp">
-        <img src="../images/shipments/2026-08-21-loading-01.jpg" alt="钢结构仓库 发往非洲">
-    </picture>
+<img src="../images/shipments/2026-08-21-loading-01.jpg" alt="钢结构仓库 发往非洲" loading="lazy">
 <span class="date-badge">📅 2026-08-21</span>
+<span class="country-badge">🌍 非洲</span>
 </div>
 <div class="content">
 <h3>钢结构仓库 → 非洲</h3>
 <div class="meta">
-<span><span class="icon">🌍</span>非洲</span>
 <span><span class="icon">🏗️</span>钢结构仓库</span>
 <span><span class="icon">📦</span>2 x 40HQ</span>
 </div>
 <p class="desc">两个40HQ集装箱装满预制钢结构仓库构件，所有构件已编号打包，便于现场快速组装。</p>
 </div>
+</div>
+
+<div class="shipment-card">
+<div class="img-wrap">
+<picture>
+        <source srcset="../images/container-loading.webp" type="image/webp">
+        <img src="../images/container-loading.jpg" alt="钢结构厂房 发往沙特" loading="lazy">
+    </picture>
+<span class="date-badge">📅 2026-08-15</span>
+<span class="country-badge">🇸🇦 沙特</span>
+</div>
+<div class="content">
+<h3>钢结构厂房 → 沙特阿拉伯</h3>
+<div class="meta">
+<span><span class="icon">🏭</span>钢结构厂房</span>
+<span><span class="icon">📦</span>3 x 40HQ</span>
+</div>
+<p class="desc">沙特制造工厂项目，三个40HQ集装箱，含H型钢柱、钢梁及檩条，适配中东高温风沙环境。</p>
+</div>
+</div>
+
+<div class="shipment-card">
+<div class="img-wrap">
+<picture>
+        <source srcset="../images/factory-yard-1.webp" type="image/webp">
+        <img src="../images/factory-yard-1.jpg" alt="钢结构车间 发往马来西亚" loading="lazy">
+    </picture>
+<span class="date-badge">📅 2026-08-10</span>
+<span class="country-badge">🇲🇾 马来西亚</span>
+</div>
+<div class="content">
+<h3>钢结构车间 → 马来西亚</h3>
+<div class="meta">
+<span><span class="icon">🏗️</span>钢结构车间</span>
+<span><span class="icon">📦</span>2 x 40HQ</span>
+</div>
+<p class="desc">马来西亚物流仓储车间，带航车梁设计，符合CIDB认证标准，两个40HQ集装箱整柜发出。</p>
+</div>
+</div>
+
+<div class="shipment-card">
+<div class="img-wrap">
+<picture>
+        <source srcset="../images/factory-interior-1.webp" type="image/webp">
+        <img src="../images/factory-interior-1.jpg" alt="矿山厂房 发往印尼" loading="lazy">
+    </picture>
+<span class="date-badge">📅 2026-08-05</span>
+<span class="country-badge">🇮🇩 印尼</span>
+</div>
+<div class="content">
+<h3>矿山选矿厂房 → 印尼</h3>
+<div class="meta">
+<span><span class="icon">⛏️</span>矿山厂房</span>
+<span><span class="icon">📦</span>4 x 40HQ</span>
+</div>
+<p class="desc">印尼选矿厂项目，大跨度重钢结构，含设备平台及输送廊道，四个40HQ集装箱分批发出。</p>
+</div>
+</div>
+
+<div class="shipment-card">
+<div class="img-wrap">
+<picture>
+        <source srcset="../images/factory-welding.webp" type="image/webp">
+        <img src="../images/factory-welding.jpg" alt="商业建筑 发往巴西" loading="lazy">
+    </picture>
+<span class="date-badge">📅 2026-07-28</span>
+<span class="country-badge">🇧🇷 巴西</span>
+</div>
+<div class="content">
+<h3>商业超市钢结构 → 巴西</h3>
+<div class="meta">
+<span><span class="icon">🏢</span>商业建筑</span>
+<span><span class="icon">📦</span>2 x 40HQ</span>
+</div>
+<p class="desc">巴西华人超市项目，大跨度无柱空间设计，含夹层结构，两个40HQ集装箱整柜发出。</p>
+</div>
+</div>
+
+<div class="shipment-card">
+<div class="img-wrap">
+<picture>
+        <source srcset="../images/agricultural-barn.webp" type="image/webp">
+        <img src="../images/agricultural-barn.jpg" alt="养殖场 发往肯尼亚" loading="lazy">
+    </picture>
+<span class="date-badge">📅 2026-07-20</span>
+<span class="country-badge">🇰🇪 肯尼亚</span>
+</div>
+<div class="content">
+<h3>奶牛场钢结构 → 肯尼亚</h3>
+<div class="meta">
+<span><span class="icon">🐄</span>农业养殖</span>
+<span><span class="icon">📦</span>1 x 40HQ</span>
+</div>
+<p class="desc">肯尼亚奶牛场项目，轻钢结构牛舍，含通风及遮阳设计，一个40HQ集装箱整柜发出。</p>
+</div>
+</div>
+
+<div class="shipment-card">
+<div class="img-wrap">
+<picture>
+        <source srcset="../images/workshop-asia.webp" type="image/webp">
+        <img src="../images/workshop-asia.jpg" alt="物流仓库 发往越南" loading="lazy">
+    </picture>
+<span class="date-badge">📅 2026-07-15</span>
+<span class="country-badge">🇻🇳 越南</span>
+</div>
+<div class="content">
+<h3>物流中心仓库 → 越南</h3>
+<div class="meta">
+<span><span class="icon">📦</span>物流仓储</span>
+<span><span class="icon">📦</span>2 x 40HQ</span>
+</div>
+<p class="desc">越南物流中心项目，大跨度仓库带装卸平台，防火涂层处理，两个40HQ集装箱整柜发出。</p>
+</div>
+</div>
+
+<div class="shipment-card">
+<div class="img-wrap">
+<picture>
+        <source srcset="../images/middle-east-construction.webp" type="image/webp">
+        <img src="../images/middle-east-construction.jpg" alt="制造工厂 发往墨西哥" loading="lazy">
+    </picture>
+<span class="date-badge">📅 2026-07-10</span>
+<span class="country-badge">🇲🇽 墨西哥</span>
+</div>
+<div class="content">
+<h3>汽车零部件工厂 → 墨西哥</h3>
+<div class="meta">
+<span><span class="icon">🏭</span>制造工厂</span>
+<span><span class="icon">📦</span>3 x 40HQ</span>
+</div>
+<p class="desc">墨西哥汽车零部件工厂项目，含办公区及生产车间，抗地震设计，三个40HQ集装箱分批发出。</p>
+</div>
+</div>
+
 </div></div><section class="shipment-cta"><div class="container"><h2>准备发货您的项目？</h2><p>从设计到装柜，我们全程把控。24小时内获取免费报价。</p><a href="contact.html" class="btn btn-accent btn-lg">免费获取报价 →</a></div></section><footer><div class="container">
 <div class="footer-grid">
 <div class="footer-brand">
