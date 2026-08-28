@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Steel Structure Shipment Gallery | Container Loading Photos | ZhongSai Steel</title>
-<meta name="description" content="Real container loading photos from ZhongSai Steel Structure factory. See our prefab steel warehouse and workshop shipments to 60+ countries. Quality inspected and professionally packed.">
-<meta name="keywords" content="steel structure shipment, steel building loading, container loading, steel structure export, China steel manufacturer">
+<title>Steel Structure Shipping Updates | Loading Videos & Photos | ZhongSai Steel</title>
+<meta name="description" content="Real container loading videos and photos from ZhongSai Steel factory. 9:16 vertical format. Prefab steel warehouses and workshops exported to 60+ countries.">
+<meta name="keywords" content="steel structure loading,steel structure shipping,container loading,steel structure export,china steel structure manufacturer,loading video">
 <meta name="robots" content="index, follow">
-<link rel="canonical" href="https://zhongsai-steelstructure.com/en/shipments.html">
-<link rel="alternate" hreflang="en" href="https://zhongsai-steelstructure.com/en/shipments.html">
-<link rel="alternate" hreflang="zh" href="https://zhongsai-steelstructure.com/zh/shipments.html">
+<link rel="canonical" href="https://zhongsai-steelstructure.com/en/shipments">
+<link rel="alternate" hreflang="en" href="https://zhongsai-steelstructure.com/en/shipments">
+<link rel="alternate" hreflang="en" href="https://zhongsai-steelstructure.com/en/shipments">
 <link rel="stylesheet" href="../css/style.css">
 <style>
 .shipment-hero{background:linear-gradient(135deg,#0f1b2d 0%,#1a2d4a 100%);color:#fff;padding:80px 0 60px;text-align:center}
@@ -19,265 +19,102 @@
 .shipment-stats .stat{text-align:center}
 .shipment-stats .stat .num{font-size:2rem;font-weight:800;color:#f59e0b}
 .shipment-stats .stat .label{font-size:.9rem;opacity:.8}
-.shipment-timeline{max-width:1100px;margin:0 auto;padding:60px 20px}
-.shipment-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:28px}
-.shipment-card{background:#fff;border-radius:16px;box-shadow:0 4px 24px rgba(0,0,0,.08);overflow:hidden;transition:transform .3s ease,box-shadow .3s ease}
-.shipment-card:hover{transform:translateY(-4px);box-shadow:0 8px 32px rgba(0,0,0,.12)}
-.shipment-card .img-wrap{position:relative;height:220px;overflow:hidden;background:#f0f0f0}
-.shipment-card .img-wrap img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s ease}
-.shipment-card:hover .img-wrap img{transform:scale(1.05)}
-.shipment-card .img-wrap .date-badge{position:absolute;top:14px;left:14px;background:rgba(245,158,11,.95);color:#fff;padding:5px 12px;border-radius:20px;font-size:.8rem;font-weight:600;backdrop-filter:blur(4px)}
-.shipment-card .img-wrap .country-badge{position:absolute;top:14px;right:14px;background:rgba(15,27,45,.85);color:#fff;padding:5px 12px;border-radius:20px;font-size:.8rem;font-weight:600;backdrop-filter:blur(4px)}
-.shipment-card .content{padding:24px}
-.shipment-card .content h3{font-size:1.2rem;margin-bottom:10px;color:#0f1b2d;font-weight:700}
-.shipment-card .meta{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px}
-.shipment-card .meta span{background:#f0f4f8;padding:3px 10px;border-radius:6px;font-size:.78rem;color:#4a5568;font-weight:500}
-.shipment-card .meta span .icon{margin-right:3px}
-.shipment-card .desc{color:#4a5568;line-height:1.65;font-size:.9rem;margin:0}
-.shipment-cta{text-align:center;padding:40px 20px 80px}
-.shipment-cta h2{font-size:1.8rem;margin-bottom:12px;color:#0f1b2d}
-.shipment-cta p{color:#4a5568;margin-bottom:24px}
-/* Fix rotated image */
-.img-rotate-90{transform:rotate(90deg) scale(1.35) !important;transform-origin:center center}
+
+/* 帖子网格 - 9:16竖屏 */
+.posts-section{max-width:1200px;margin:0 auto;padding:60px 20px}
+.posts-header{text-align:center;margin-bottom:40px}
+.posts-header h2{font-size:1.8rem;color:#0f1b2d;margin-bottom:8px}
+.posts-header p{color:#666;font-size:1rem}
+.posts-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.post-card{position:relative;border-radius:16px;overflow:hidden;background:#f0f0f0;aspect-ratio:9/16;cursor:pointer;transition:transform .3s ease,box-shadow .3s ease}
+.post-card:hover{transform:translateY(-4px);box-shadow:0 8px 32px rgba(0,0,0,.15)}
+.post-card .post-media{width:100%;height:100%;object-fit:cover;display:block}
+.post-card .post-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.85) 0%,rgba(0,0,0,.2) 50%,transparent 100%);display:flex;flex-direction:column;justify-content:flex-end;padding:16px}
+.post-card .post-date{font-size:.75rem;color:rgba(255,255,255,.8);margin-bottom:4px}
+.post-card .post-title{font-size:1rem;font-weight:700;color:#fff;margin-bottom:6px;line-height:1.3}
+.post-card .post-meta{display:flex;gap:8px;flex-wrap:wrap}
+.post-card .post-meta span{background:rgba(255,255,255,.2);color:#fff;padding:2px 8px;border-radius:10px;font-size:.7rem;backdrop-filter:blur(4px)}
+.post-card .video-badge{position:absolute;top:12px;right:12px;background:rgba(0,0,0,.6);color:#fff;width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.8rem;backdrop-filter:blur(4px)}
+.post-card .photo-badge{position:absolute;top:12px;right:12px;background:rgba(0,0,0,.6);color:#fff;width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.8rem;backdrop-filter:blur(4px)}
+
+/* 空帖子占位 */
+.post-empty{background:linear-gradient(135deg,#f8fafc 0%,#e2e8f0 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:20px;border:2px dashed #cbd5e1}
+.post-empty .empty-icon{font-size:2.5rem;margin-bottom:12px;opacity:.4}
+.post-empty .empty-text{font-size:.9rem;color:#94a3b8;font-weight:600}
+.post-empty .empty-sub{font-size:.75rem;color:#cbd5e1;margin-top:4px}
+
+/* 帖子详情弹窗 */
+.post-modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.9);z-index:10000;align-items:center;justify-content:center;padding:20px}
+.post-modal.active{display:flex}
+.post-modal-content{background:#fff;border-radius:16px;max-width:900px;width:100%;max-height:90vh;overflow:hidden;display:grid;grid-template-columns:1fr 1fr;position:relative}
+.post-modal-close{position:absolute;top:16px;right:16px;background:rgba(0,0,0,.5);color:#fff;width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:1.2rem;z-index:10;border:none}
+.post-modal-media{background:#000;display:flex;align-items:center;justify-content:center;aspect-ratio:9/16;max-height:90vh}
+.post-modal-media img,.post-modal-media video{max-width:100%;max-height:100%;object-fit:contain}
+.post-modal-info{padding:32px;overflow-y:auto;max-height:90vh}
+.post-modal-info h2{font-size:1.5rem;color:#0f1b2d;margin-bottom:12px}
+.post-modal-info .modal-date{color:#666;font-size:.9rem;margin-bottom:16px}
+.post-modal-info .modal-desc{color:#4a5568;line-height:1.7;margin-bottom:20px}
+.post-modal-info .modal-meta{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px}
+.post-modal-info .modal-meta span{background:#f0f4f8;padding:6px 12px;border-radius:8px;font-size:.85rem;color:#2d5a87;font-weight:600}
+
+@media(max-width:1024px){.posts-grid{grid-template-columns:repeat(3,1fr)}}
 @media(max-width:768px){
-.shipment-grid{grid-template-columns:1fr}
+.posts-grid{grid-template-columns:repeat(2,1fr);gap:12px}
 .shipment-hero h1{font-size:1.8rem}
 .shipment-hero{padding:60px 0 40px}
 .shipment-stats{gap:24px}
 .shipment-stats .stat .num{font-size:1.5rem}
+.post-modal-content{grid-template-columns:1fr;max-width:400px}
+.post-modal-media{max-height:50vh}
+.post-modal-info{max-height:40vh;padding:20px}
 }
 </style>
 
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="ZhongSai Steel Structure | Prefab Steel Warehouse and Workshop Manufacturer China">
-<meta name="twitter:description" content="Leading China manufacturer of prefab steel warehouses, workshops, industrial buildings. 100000m2 factory, 100000 tons capacity, exported to 60+ countries.">
-<meta name="twitter:image" content="https://zhongsai-steelstructure.com/images/og-image.jpg">
-
-
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://zhongsai-steelstructure.com/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Shipments",
-          "item": "https://zhongsai-steelstructure.com/shipments.html"
-        }
-      ]
-    },
-    {
-      "@type": "WebSite",
-      "@id": "https://zhongsai-steelstructure.com/#website",
-      "url": "https://zhongsai-steelstructure.com",
-      "name": "ZhongSai Steel Structure",
-      "alternateName": "中赛钢构",
-      "inLanguage": [
-        "en",
-        "zh-CN"
-      ],
-      "publisher": {
-        "@id": "https://zhongsai-steelstructure.com/#organization"
-      },
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": {
-          "@type": "EntryPoint",
-          "urlTemplate": "https://zhongsai-steelstructure.com/search?q={search_term_string}"
-        },
-        "query-input": "required name=search_term_string"
-      }
-    }
-  ]
+    "@context":  "https://schema.org",
+    "@graph":  [
+                   {
+                       "@type":  "BreadcrumbList",
+                       "itemListElement":  [
+                                               {
+                                                   "@type":  "ListItem",
+                                                   "position":  1,
+                                                   "name":  "首页",
+                                                   "item":  "https://zhongsai-steelstructure.com/zh/"
+                                               },
+                                               {
+                                                   "@type":  "ListItem",
+                                                   "position":  2,
+                                                   "name":  "出货动态",
+                                                   "item":  "https://zhongsai-steelstructure.com/zh/shipments"
+                                               }
+                                           ]
+                   },
+                   {
+                       "@type":  "Organization",
+                       "name":  "深圳市中赛钢结构进出口有限公司",
+                       "alternateName":  "中赛钢构",
+                       "url":  "https://zhongsai-steelstructure.com/",
+                       "logo":  "https://zhongsai-steelstructure.com/images/logo-transparent.png",
+                       "description":  "专业钢结构设计、制造、出口和安装技术指导，15年+出口经验，服务60+国家。",
+                       "address":  {
+                                       "@type":  "PostalAddress",
+                                       "addressCountry":  "CN",
+                                       "addressRegion":  "广东",
+                                       "addressLocality":  "深圳"
+                                   },
+                       "contactPoint":  {
+                                            "@type":  "ContactPoint",
+                                            "telephone":  "+86-131-9200-7378",
+                                            "contactType":  "sales",
+                                            "email":  "zhongsaiganggou@gmail.com"
+                                        }
+                   }
+               ]
 }
 </script>
 
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Organization",
-      "@id": "https://zhongsai-steelstructure.com/#organization",
-      "name": "ZhongSai Steel Structure",
-      "legalName": "Shenzhen ZhongSai Steel Structure Import and Export Co., Ltd.",
-      "alternateName": [
-        "中赛钢构",
-        "Dongguan Zhongsai Steel Structure Engineering Co., Ltd.",
-        "东莞市中赛钢结构工程有限公司",
-        "Dongguan Zhongsai Steel Structure Co., Ltd.",
-        "东莞市中赛钢结构有限公司",
-        "ZhongSai Steel",
-        "Dongguan Zhongsai Steel Structure"
-      ],
-      "url": "https://zhongsai-steelstructure.com",
-      "logo": "https://zhongsai-steelstructure.com/images/logo.png",
-      "description": "ZhongSai Steel Structure (中赛钢构) is a family-owned China steel structure manufacturer and exporter. Founder Yan Xizheng has 15+ years of industry experience (since 2004). Original company Dongguan Zhongsai Steel Structure Engineering Co., Ltd. (2011-2021, legal rep Yan Xizheng, 8.88M RMB capital) was deregistered Aug 6, 2021. Manufacturing restructured as Dongguan Zhongsai Steel Structure Co., Ltd. (est. Oct 27, 2023, legal rep Yan Zhikai, Yan Xizheng's father). International trade now managed by Shenzhen ZhongSai Steel Structure Import and Export Co., Ltd. (est. 2024, legal rep Yan Xizheng). Same family ownership, same factories (Dongguan + Huizhou, 100,000 sqm, 100,000 tons/year), same team. Specializing in prefab steel warehouse, workshop, factory building, poultry house, mining building. Design, manufacturing, export and installation technical guidance only — no on-site construction. Exported to 60+ countries.",
-      "foundingDate": "2011",
-      "foundingLocation": {
-        "@type": "Place",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Dongguan",
-          "addressRegion": "Guangdong",
-          "addressCountry": "CN"
-        }
-      },
-      "numberOfEmployees": "300",
-      "areaServed": "Worldwide",
-      "hasCredential": [
-        {
-          "@type": "EducationalOccupationalCredential",
-          "credentialCategory": "ISO 9001:2015"
-        },
-        {
-          "@type": "EducationalOccupationalCredential",
-          "credentialCategory": "CIDB (Malaysia)"
-        }
-      ],
-      "address": {
-        "@type": "PostalAddress",
-        "addressCountry": "CN",
-        "addressRegion": "Guangdong",
-        "addressLocality": "Dongguan / Huizhou / Shenzhen",
-        "streetAddress": "Dongguan and Huizhou Production Bases, Shenzhen Trade Office"
-      },
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "+86-131-1327-0408",
-        "contactType": "sales",
-        "email": "zhongsaiganggou@gmail.com",
-        "availableLanguage": [
-          "English",
-          "Chinese"
-        ]
-      },
-      "sameAs": [
-        "https://www.youtube.com/@ZhongSaiSteel",
-        "https://www.facebook.com/ZhongSaiSteelStructure",
-        "https://www.tiktok.com/@zhongsai_steelstructure",
-        "https://zsgck.com",
-        "https://www.tendata.com/en/buyer/dongguan-zhongsai-steel-structure-co-ltd-CHNdcf86eafae716f230253bcd706994b8c.html"
-      ]
-    },
-    {
-      "@type": "Manufacturer",
-      "@id": "https://zhongsai-steelstructure.com/#manufacturer",
-      "name": "ZhongSai Steel Structure",
-      "legalName": "Shenzhen ZhongSai Steel Structure Import and Export Co., Ltd.",
-      "alternateName": [
-        "中赛钢构",
-        "Dongguan Zhongsai Steel Structure Engineering Co., Ltd.",
-        "Dongguan Zhongsai Steel Structure Co., Ltd."
-      ],
-      "url": "https://zhongsai-steelstructure.com",
-      "logo": "https://zhongsai-steelstructure.com/images/logo.png",
-      "description": "Family-owned steel structure manufacturer in China. Founder Yan Xizheng has 15+ years of export experience (since 2004). Original Dongguan Zhongsai Steel Structure Engineering Co., Ltd. (2011-2021) deregistered Aug 2021. Manufacturing now by Dongguan Zhongsai Steel Structure Co., Ltd. (est. 2023, legal rep Yan Zhikai). Trade by Shenzhen ZhongSai (est. 2024, legal rep Yan Xizheng). 100,000 sqm factory in Dongguan/Huizhou, 300+ workers, 100,000 tons annual capacity. Design, manufacturing, export and installation technical guidance worldwide.",
-      "foundingDate": "2011",
-      "numberOfEmployees": "300",
-      "areaServed": "Worldwide",
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Steel Structure Products",
-        "itemListElement": [
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Product",
-              "name": "Prefab Steel Warehouse"
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Product",
-              "name": "Steel Structure Workshop"
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Product",
-              "name": "Steel Factory Building"
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Product",
-              "name": "Steel Structure Hangar"
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Product",
-              "name": "Poultry Farm Steel Building"
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Product",
-              "name": "Steel Structure Mining Building"
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Product",
-              "name": "Commercial Steel Building"
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Product",
-              "name": "Public Steel Building"
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Product",
-              "name": "Steel Structure Energy Building"
-            }
-          }
-        ]
-      },
-      "address": {
-        "@type": "PostalAddress",
-        "addressCountry": "CN",
-        "addressRegion": "Guangdong",
-        "addressLocality": "Dongguan / Huizhou",
-        "streetAddress": "Industrial Zone"
-      },
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "+86-131-1327-0408",
-        "contactType": "sales",
-        "email": "zhongsaiganggou@gmail.com",
-        "availableLanguage": [
-          "English",
-          "Chinese"
-        ]
-      }
-    }
-  ]
-}
-</script>
 <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
@@ -295,189 +132,91 @@ fbq('track', 'PageView');
 src="https://www.facebook.com/tr?id=1803600767696432&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
-
-<meta name="msvalidate.01" content="C2E8A9CB7F3CF82EB3632C985C0FBA63" />
 </head>
-<body><header class="site-header" id="siteHeader">
+<body>
+<header class="site-header" id="siteHeader">
 <div class="container header-inner">
 <a href="index.html" class="brand-logo">
-<img src="../images/logo-transparent.png" alt="ZhongSai Steel Structure Logo" class="logo-img">
-<div class="brand-text">
-<span class="brand-cn">中赛钢构</span>
-<span class="brand-en">ZHONGSAI STEEL STRUCTURE</span>
-</div>
+<img src="../images/logo-transparent.png" alt="中赛钢构 Logo" class="logo-img">
+<div class="brand-text"><span class="brand-cn">中赛钢构</span><span class="brand-en">ZHONGSAI STEEL STRUCTURE</span></div>
 </a>
-<nav class="main-nav" id="mainNav"><a href="index.html">Home</a><a href="products.html">Products</a><a href="solutions.html">Solutions</a><a href="projects.html">Projects</a><a href="shipments.html" class="active">Shipments</a><a href="about.html">About Us</a><a href="contact.html">Contact</a></nav>
+<nav class="main-nav" id="mainNav"><a href="index.html">首页</a><a href="products.html">产品中心</a><a href="solutions.html">解决方案</a><a href="projects.html">项目案例</a><a href="shipments.html" class="active">出货动态</a><a href="about.html">关于我们</a><a href="contact.html">联系我们</a></nav>
 <div class="header-actions">
-<div class="lang-switch"><a href="../zh/shipments.html" class="lang-other">中文</a><span class="lang-divider">|</span><span class="lang-current">EN</span></div>
-<a href="contact.html" class="btn btn-quote">Get a Quote</a>
-<button class="mobile-menu-btn" onclick="document.getElementById('mainNav').classList.toggle('open')" aria-label="Menu">
-<span></span><span></span><span></span>
-</button>
+<div class="lang-switch"><span class="lang-current">EN</span><span class="lang-divider">|</span><a href="../zh/shipments.html" class="lang-other">中文</a></div>|<div class="lang-switch"><span class="lang-current">EN</span><span class="lang-divider">|</span><a href="../zh/shipments.html" class="lang-other">中文</a></div>
+<a href="contact.html" class="btn btn-quote">获取报价</a>
+<button class="mobile-menu-btn" onclick="document.getElementById('mainNav').classList.toggle('open')" aria-label="Menu"><span></span><span></span><span></span></button>
 </div>
-</div></header><section class="shipment-hero"><div class="container"><h1>Shipment Gallery — Loading Updates</h1><p>Real container loading photos from our factory. Every shipment is quality-inspected and professionally packed before export. See our production capacity in action.</p>
+</div>
+</header>
+
+<section class="shipment-hero">
+<div class="container">
+<h1>Shipping Updates — Container Loading</h1>
+<p>Real container loading videos and photos from ZhongSai Steel factory. 9:16 vertical format, documenting every steel structure shipment from factory to port.</p>
 <div class="shipment-stats">
 <div class="stat"><div class="num">700+</div><div class="label">Containers/Year</div></div>
 <div class="stat"><div class="num">60+</div><div class="label">Countries</div></div>
-<div class="stat"><div class="num">100K</div><div class="label">Tons Capacity</div></div>
-<div class="stat"><div class="num">20 Days</div><div class="label">Lead Time</div></div>
+<div class="stat"><div class="num">10万</div><div class="label">Tons/Year</div></div>
+<div class="stat"><div class="num">20天</div><div class="label">Lead Time</div></div>
 </div>
-</div></section><div class="shipment-timeline"><div class="shipment-grid">
+</div>
+</section>
 
-<div class="shipment-card">
-<div class="img-wrap">
-<img src="../images/shipments/2026-08-21-loading-01.jpg" alt="Steel Warehouse Structure loading to Africa" loading="lazy">
-<span class="date-badge">📅 2026-08-21</span>
-<span class="country-badge">🌍 Africa</span>
+<section class="posts-section">
+<div class="posts-header">
+<h2>Latest Loading Photos</h2>
+<p>9:16 vertical videos and photos, documenting every shipment</p>
 </div>
-<div class="content">
-<h3>Steel Warehouse → Africa</h3>
-<div class="meta">
-<span><span class="icon">🏗️</span>Steel Warehouse</span>
-<span><span class="icon">📦</span>2 x 40HQ</span>
-</div>
-<p class="desc">Two 40HQ containers loaded with prefab steel warehouse components. All members marked and packed for easy on-site assembly.</p>
-</div>
-</div>
+<div class="posts-grid" id="postsGrid">
 
-<div class="shipment-card">
-<div class="img-wrap">
-<picture>
-        <source srcset="../images/container-loading.webp" type="image/webp">
-        <img src="../images/container-loading.jpg" alt="Steel Factory Building loading to Saudi Arabia" loading="lazy">
-    </picture>
-<span class="date-badge">📅 2026-08-15</span>
-<span class="country-badge">🇸🇦 Saudi Arabia</span>
+<!-- YouTube shipping playlist videos, dynamically loaded, click to play inline -->
+<div id="playlistVideosContainer" style="grid-column:1/-1;padding:10px 0 30px;">
+<div style="text-align:center;margin-bottom:24px;">
+<p style="color:#4a5568;font-size:1rem;margin-bottom:6px;">📺 ZhongSai Steel Shipping Videos</p>
+<p style="color:#718096;font-size:0.85rem;">Videos from YouTube "Shipping" playlist. Click to play directly on this page.</p>
 </div>
-<div class="content">
-<h3>Steel Factory Building → Saudi Arabia</h3>
-<div class="meta">
-<span><span class="icon">🏭</span>Factory Building</span>
-<span><span class="icon">📦</span>3 x 40HQ</span>
+<div id="playlistVideosGrid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:900px;margin:0 auto;width:100%;">
+<div style="aspect-ratio:9/16;display:flex;align-items:center;justify-content:center;color:#718096;font-size:0.9rem;">Loading...</div>
 </div>
-<p class="desc">Saudi manufacturing facility project with H-section columns, beams and purlins. Designed for high temperature and sandy environment. Three 40HQ containers.</p>
+<div style="text-align:center;margin-top:24px;">
+<a href="https://www.youtube.com/playlist?list=PLFxcBbXO5kK4" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;color:#ff0000;font-weight:600;text-decoration:none;font-size:0.9rem;">
+<svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+View full shipping playlist on YouTube →
+</a>
 </div>
 </div>
+<style>
+@media (max-width: 768px) {
+  #playlistVideosGrid { grid-template-columns: 1fr !important; max-width: 280px !important; margin: 0 auto !important; }
+}
+</style>
 
-<div class="shipment-card">
-<div class="img-wrap">
-<picture>
-        <source srcset="../images/factory-yard-1.webp" type="image/webp">
-        <img src="../images/factory-yard-1.jpg" alt="Steel Workshop loading to Malaysia" loading="lazy">
-    </picture>
-<span class="date-badge">📅 2026-08-10</span>
-<span class="country-badge">🇲🇾 Malaysia</span>
 </div>
-<div class="content">
-<h3>Steel Workshop → Malaysia</h3>
-<div class="meta">
-<span><span class="icon">🏗️</span>Steel Workshop</span>
-<span><span class="icon">📦</span>2 x 40HQ</span>
-</div>
-<p class="desc">Malaysia logistics warehouse workshop with crane beam design. CIDB certified standard. Two 40HQ containers shipped as full container load.</p>
+</section>
+
+<!-- 帖子详情弹窗 -->
+<div class="post-modal" id="postModal">
+<div class="post-modal-content">
+<button class="post-modal-close" onclick="closePostModal()">×</button>
+<div class="post-modal-media" id="modalMedia"></div>
+<div class="post-modal-info" id="modalInfo"></div>
 </div>
 </div>
 
-<div class="shipment-card">
-<div class="img-wrap">
-<picture>
-        <source srcset="../images/factory-interior-1.webp" type="image/webp">
-        <img src="../images/factory-interior-1.jpg" alt="Mining Plant loading to Indonesia" loading="lazy">
-    </picture>
-<span class="date-badge">📅 2026-08-05</span>
-<span class="country-badge">🇮🇩 Indonesia</span>
+<section class="shipment-cta" style="text-align:center;padding:40px 20px 80px;">
+<div class="container">
+<h2 style="font-size:1.8rem;margin-bottom:12px;color:#0f1b2d;">Ready to Ship Your Project?</h2>
+<p style="color:#4a5568;margin-bottom:24px;">From design to container loading, we manage everything. Get a free quote within 24 hours.</p>
+<a href="contact.html" class="btn btn-accent btn-lg">Get Free Quote →</a>
 </div>
-<div class="content">
-<h3>Mining Processing Plant → Indonesia</h3>
-<div class="meta">
-<span><span class="icon">⛏️</span>Mining Building</span>
-<span><span class="icon">📦</span>4 x 40HQ</span>
-</div>
-<p class="desc">Indonesia mineral processing plant project with large-span heavy steel structure, including equipment platform and conveyor gallery. Four 40HQ containers.</p>
-</div>
-</div>
+</section>
 
-<div class="shipment-card">
-<div class="img-wrap">
-<picture>
-        <source srcset="../images/factory-welding.webp" type="image/webp">
-        <img src="../images/factory-welding.jpg" alt="Commercial Building loading to Brazil" loading="lazy">
-    </picture>
-<span class="date-badge">📅 2026-07-28</span>
-<span class="country-badge">🇧🇷 Brazil</span>
-</div>
-<div class="content">
-<h3>Commercial Supermarket → Brazil</h3>
-<div class="meta">
-<span><span class="icon">🏢</span>Commercial Building</span>
-<span><span class="icon">📦</span>2 x 40HQ</span>
-</div>
-<p class="desc">Brazil Chinese supermarket project with large-span column-free space design, including mezzanine structure. Two 40HQ containers shipped as FCL.</p>
-</div>
-</div>
-
-<div class="shipment-card">
-<div class="img-wrap">
-<picture>
-        <source srcset="../images/agricultural-barn.webp" type="image/webp">
-        <img src="../images/agricultural-barn.jpg" alt="Dairy Farm loading to Kenya" loading="lazy">
-    </picture>
-<span class="date-badge">📅 2026-07-20</span>
-<span class="country-badge">🇰🇪 Kenya</span>
-</div>
-<div class="content">
-<h3>Dairy Farm Building → Kenya</h3>
-<div class="meta">
-<span><span class="icon">🐄</span>Agricultural</span>
-<span><span class="icon">📦</span>1 x 40HQ</span>
-</div>
-<p class="desc">Kenya dairy farm project with light steel cow barn structure, including ventilation and shading design. One 40HQ container shipped as FCL.</p>
-</div>
-</div>
-
-<div class="shipment-card">
-<div class="img-wrap">
-<picture>
-        <source srcset="../images/workshop-asia.webp" type="image/webp">
-        <img src="../images/workshop-asia.jpg" alt="Logistics Warehouse loading to Vietnam" loading="lazy">
-    </picture>
-<span class="date-badge">📅 2026-07-15</span>
-<span class="country-badge">🇻🇳 Vietnam</span>
-</div>
-<div class="content">
-<h3>Logistics Center Warehouse → Vietnam</h3>
-<div class="meta">
-<span><span class="icon">📦</span>Logistics</span>
-<span><span class="icon">📦</span>2 x 40HQ</span>
-</div>
-<p class="desc">Vietnam logistics center project with large-span warehouse and loading dock, fire-resistant coating treatment. Two 40HQ containers shipped as FCL.</p>
-</div>
-</div>
-
-<div class="shipment-card">
-<div class="img-wrap">
-<picture>
-        <source srcset="../images/middle-east-construction.webp" type="image/webp">
-        <img src="../images/middle-east-construction.jpg" alt="Auto Parts Factory loading to Mexico" loading="lazy">
-    </picture>
-<span class="date-badge">📅 2026-07-10</span>
-<span class="country-badge">🇲🇽 Mexico</span>
-</div>
-<div class="content">
-<h3>Auto Parts Factory → Mexico</h3>
-<div class="meta">
-<span><span class="icon">🏭</span>Manufacturing</span>
-<span><span class="icon">📦</span>3 x 40HQ</span>
-</div>
-<p class="desc">Mexico auto parts factory project including office area and production workshop, earthquake-resistant design. Three 40HQ containers shipped in batches.</p>
-</div>
-</div>
-
-</div></div><section class="shipment-cta"><div class="container"><h2>Ready to Ship Your Project?</h2><p>From design to container loading — we handle every step. Get a free quote within 24 hours.</p><a href="contact.html" class="btn btn-accent btn-lg">Get Free Quote →</a></div></section><footer><div class="container">
+<footer>
+<div class="container">
 <div class="footer-grid">
 <div class="footer-brand">
 <a href="index.html" class="logo"><div class="logo-text"><span class="brand">中赛钢构</span><span class="brand-en">ZHONGSAI STEEL</span></div></a>
-<p>Shenzhen ZhongSai Steel Structure Import and Export Co., Ltd. — Your trusted one-stop partner for prefab steel buildings worldwide. 20+ years experience, 60+ countries served.</p>
+<p>Shenzhen ZhongSai Steel Structure Import and Export Co., Ltd. — Your trusted one-stop prefab steel structure partner worldwide. 15+ years export experience, serving 60+ countries.</p>
 <div class="footer-social">
 <a href="https://www.youtube.com/@ZhongSaiSteel" target="_blank" rel="noopener" aria-label="YouTube" class="social-icon youtube"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
 <a href="https://www.facebook.com/ZhongSaiSteelStructure" target="_blank" rel="noopener" aria-label="Facebook" class="social-icon facebook"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
@@ -485,24 +224,221 @@ src="https://www.facebook.com/tr?id=1803600767696432&ev=PageView&noscript=1"
 <a href="https://wa.me/8613192007378" target="_blank" rel="noopener" aria-label="WhatsApp" class="social-icon whatsapp"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
 </div>
 </div>
-<div class="footer-col"><h4>Products</h4><ul>
-<li><a href="products.html">Steel Warehouse</a></li><li><a href="products.html">Steel Workshop</a></li><li><a href="products.html">Steel Public Building</a></li><li><a href="products.html">Commercial Building</a></li><li><a href="products.html">Agricultural Building</a></li><li><a href="products.html">Custom Structure</a></li>
+<div class="footer-col"><h4>产品中心</h4><ul>
+<li><a href="products.html">钢结构仓库</a></li><li><a href="products.html">钢结构厂房</a></li><li><a href="products.html">公共民用建筑</a></li><li><a href="products.html">商业建筑</a></li><li><a href="products.html">农业建筑</a></li><li><a href="products.html">定制结构</a></li>
 </ul></div>
-<div class="footer-col"><h4>Company</h4><ul>
-<li><a href="about.html">About Us</a></li><li><a href="projects.html">Projects</a></li><li><a href="shipments.html">Shipments</a></li><li><a href="blog/index.html">Blog</a></li><li><a href="contact.html">Contact Us</a></li><li><a href="sitemap.xml">Sitemap</a></li>
+<div class="footer-col"><h4>关于我们</h4><ul>
+<li><a href="about.html">公司简介</a></li><li><a href="projects.html">项目案例</a></li><li><a href="shipments.html">出货动态</a></li><li><a href="blog/index.html">博客资讯</a></li><li><a href="contact.html">联系我们</a></li><li><a href="../sitemap.xml">网站地图</a></li>
 </ul></div>
-<div class="footer-col"><h4>Contact</h4><ul class="footer-contact">
-<li><span class="icon">📍</span><span>Dongguan and Huizhou Production Bases, Guangdong, China</span></li>
+<div class="footer-col"><h4>联系方式</h4><ul class="footer-contact">
+<li><span class="icon">📍</span><span>广东东莞、惠州双生产基地</span></li>
 <li><span class="icon">📧</span><span>zhongsaiganggou@gmail.com</span></li>
 <li><span class="icon">📱</span><span>WhatsApp: +86 131 9200 7378</span></li>
-<li><span class="icon">📞</span><span>Phone: +86 131 1327 0408</span></li>
+<li><span class="icon">📞</span><span>电话: +86 131 1327 0408</span></li>
 </ul></div>
 </div>
-<div class="footer-bottom"><span>© 2026 Shenzhen ZhongSai Steel Structure Import and Export Co., Ltd. All rights reserved.</span>
-<div class="links"><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a><a href="sitemap.xml">Sitemap</a></div></div>
-</div></footer>
+<div class="footer-bottom"><span>© 2026 深圳市中赛钢结构进出口有限公司 版权所有</span>
+<div class="links"><a href="privacy.html">隐私政策</a><a href="terms.html">服务条款</a><a href="../sitemap.xml">网站地图</a></div></div>
+</div>
+</footer>
 <a href="https://wa.me/8613192007378" class="whatsapp-float" aria-label="Chat on WhatsApp"></a>
+
 <script>
-document.querySelectorAll('.faq-question').forEach(function(q){q.addEventListener('click',function(){q.parentElement.classList.toggle('open')})});
+// Post data (first is real photo, rest loaded dynamically from playlist)
+const posts = [
+  {
+    type: 'photo',
+    media: '../images/shipments/2026-08-21-loading-01.jpg',
+    date: '2026-08-21',
+    title: 'Steel Warehouse → Africa',
+    desc: 'Two 40HQ containers filled with prefab steel warehouse components. All members are numbered and packaged for quick on-site assembly. Professional logistics tracking from factory to port.',
+    meta: ['🏗️ Steel Warehouse', '📦 2 x 40HQ', '🌍 Africa']
+  }
+];
+
+// Dynamically load YouTube shipping playlist videos (inline playback)
+async function loadPlaylistVideos() {
+  const grid = document.getElementById('playlistVideosGrid');
+  if (!grid) return;
+  
+  const playlistId = 'PLFxcBbXO5kK4';
+  
+  try {
+    // Try backend API first
+    let videos = [];
+    try {
+      const response = await fetch('/api/youtube-playlist');
+      const data = await response.json();
+      if (data.success && data.videos && data.videos.length > 0) {
+        videos = data.videos;
+      }
+    } catch (apiError) {
+      console.warn('Backend API failed, trying NoKey API:', apiError);
+    }
+    
+    // Fallback to NoKey API
+    if (videos.length === 0) {
+      const apiUrl = `https://yt.lemnoslife.com/playlistItems?part=snippet&playlistId=${playlistId}&maxResults=20`;
+      const response = await fetch(apiUrl);
+      const data = await response.json();
+      if (data.items && data.items.length > 0) {
+        for (const item of data.items) {
+          const snippet = item.snippet;
+          const videoId = snippet?.resourceId?.videoId;
+          if (videoId && snippet.title !== 'Private video' && snippet.title !== 'Deleted video') {
+            const thumbnails = snippet?.thumbnails || {};
+            const thumbnail = thumbnails?.high?.url || thumbnails?.medium?.url || thumbnails?.default?.url || `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
+            videos.push({
+              id: videoId,
+              title: snippet.title || 'Untitled',
+              thumbnail: thumbnail,
+              published: snippet.publishedAt || ''
+            });
+          }
+        }
+      }
+    }
+    
+    if (videos.length === 0) {
+      throw new Error('No videos');
+    }
+    
+    // Only latest 3 videos
+    videos = videos.slice(0, 3);
+    
+    // Add to posts array
+    videos.forEach(function(video) {
+      posts.push({
+        type: 'youtube',
+        videoId: video.id,
+        media: video.thumbnail,
+        date: video.published || '',
+        title: video.title,
+        desc: 'Video from ZhongSai Steel YouTube shipping playlist.',
+        meta: ['📦 Shipping & Loading', '🎬 YouTube Video', '🚢 Export Logistics']
+      });
+    });
+    
+    // Render video cards (inline playback)
+    grid.innerHTML = videos.map(function(video) {
+      const date = video.published ? new Date(video.published).toLocaleDateString('en-US', {year:'numeric',month:'short',day:'numeric'}) : '';
+      return '<div class="post-card video-card" data-video-id="' + video.id + '" onclick="playVideoInline(this, \'' + video.id + '\')" style="aspect-ratio:9/16;overflow:hidden;border-radius:14px;background:#000;box-shadow:0 4px 20px rgba(0,0,0,0.15);position:relative;width:100%;cursor:pointer;transition:transform .3s ease,box-shadow .3s ease;" onmouseover="this.style.transform=\'translateY(-4px)\';this.style.boxShadow=\'0 8px 32px rgba(0,0,0,0.25)\'" onmouseout="this.style.transform=\'translateY(0)\';this.style.boxShadow=\'0 4px 20px rgba(0,0,0,0.15)\'">' +
+        '<img src="https://img.youtube.com/vi/' + video.id + '/maxresdefault.jpg" alt="' + video.title + '" class="post-media" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;" onerror="this.src=\'https://img.youtube.com/vi/' + video.id + '/hqdefault.jpg\'">' +
+        '<div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.1) 50%,transparent 100%);display:flex;flex-direction:column;justify-content:flex-end;padding:16px;">' +
+          (date ? '<div style="font-size:0.75rem;color:rgba(255,255,255,0.8);margin-bottom:6px;">📅 ' + date + '</div>' : '') +
+          '<div style="font-size:0.9rem;font-weight:700;color:#fff;margin-bottom:6px;">' + video.title + '</div>' +
+          '<div style="font-size:0.75rem;color:rgba(255,255,255,0.8);">📦 Shipping</div>' +
+        '</div>' +
+        '<div class="video-play-btn" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:60px;height:60px;background:rgba(0,0,0,0.6);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:1.5rem;backdrop-filter:blur(4px);pointer-events:none;">▶</div>' +
+      '</div>';
+    }).join('');
+    
+  } catch (error) {
+    console.warn('Playlist load failed, using fallback:', error);
+    const fallbackVideos = [
+      { id: 'KeXTIxd07LY', title: 'Steel Structure Container Loading', thumbnail: 'https://img.youtube.com/vi/KeXTIxd07LY/hqdefault.jpg' },
+      { id: 'SdM7zC5Dp5Y', title: 'ZhongSai Steel Factory Tour', thumbnail: 'https://img.youtube.com/vi/SdM7zC5Dp5Y/hqdefault.jpg' },
+      { id: 'kr2S2qqL_AY', title: 'Steel Structure Production', thumbnail: 'https://img.youtube.com/vi/kr2S2qqL_AY/hqdefault.jpg' }
+    ];
+    fallbackVideos.forEach(function(video) {
+      posts.push({
+        type: 'youtube',
+        videoId: video.id,
+        media: video.thumbnail,
+        date: '',
+        title: video.title,
+        desc: 'Video from ZhongSai Steel YouTube shipping playlist.',
+        meta: ['📦 Shipping & Loading', '🎬 YouTube Video', '🚢 Export Logistics']
+      });
+    });
+    grid.innerHTML = fallbackVideos.map(function(video) {
+      return '<div class="post-card video-card" data-video-id="' + video.id + '" onclick="playVideoInline(this, \'' + video.id + '\')" style="aspect-ratio:9/16;overflow:hidden;border-radius:14px;background:#000;box-shadow:0 4px 20px rgba(0,0,0,0.15);position:relative;width:100%;cursor:pointer;transition:transform .3s ease,box-shadow .3s ease;" onmouseover="this.style.transform=\'translateY(-4px)\';this.style.boxShadow=\'0 8px 32px rgba(0,0,0,0.25)\'" onmouseout="this.style.transform=\'translateY(0)\';this.style.boxShadow=\'0 4px 20px rgba(0,0,0,0.15)\'">' +
+        '<img src="' + video.thumbnail + '" alt="' + video.title + '" class="post-media" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;">' +
+        '<div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.1) 50%,transparent 100%);display:flex;flex-direction:column;justify-content:flex-end;padding:16px;">' +
+          '<div style="font-size:0.9rem;font-weight:700;color:#fff;margin-bottom:6px;">' + video.title + '</div>' +
+          '<div style="font-size:0.75rem;color:rgba(255,255,255,0.8);">📦 Shipping</div>' +
+        '</div>' +
+        '<div class="video-play-btn" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:60px;height:60px;background:rgba(0,0,0,0.6);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:1.5rem;backdrop-filter:blur(4px);pointer-events:none;">▶</div>' +
+      '</div>';
+    }).join('');
+  }
+}
+
+// Inline video playback (no popup)
+let currentPlayingCard = null;
+function playVideoInline(card, videoId) {
+  if (currentPlayingCard === card) {
+    stopVideoInline(card);
+    currentPlayingCard = null;
+    return;
+  }
+  if (currentPlayingCard) {
+    stopVideoInline(currentPlayingCard);
+  }
+  card.dataset.originalHTML = card.innerHTML;
+  card.innerHTML = '<iframe style="width:100%;height:100%;border:0;display:block;" src="https://www.youtube.com/embed/' + videoId + '?autoplay=1&rel=0&playsinline=1&fs=0&modestbranding=1" title="Video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>';
+  card.classList.add('playing');
+  currentPlayingCard = card;
+}
+
+function stopVideoInline(card) {
+  if (card.dataset.originalHTML) {
+    card.innerHTML = card.dataset.originalHTML;
+    card.classList.remove('playing');
+  }
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', loadPlaylistVideos);
+} else {
+  loadPlaylistVideos();
+}
+
+// 打开帖子详情
+function openPostModal(index) {
+  if (index >= posts.length) return;
+  const post = posts[index];
+  const modal = document.getElementById('postModal');
+  const media = document.getElementById('modalMedia');
+  const info = document.getElementById('modalInfo');
+  
+  if (post.type === 'youtube') {
+    media.innerHTML = '<iframe style="width:100%;height:100%;border:0;" src="https://www.youtube.com/embed/' + post.videoId + '?autoplay=1&rel=0" title="' + post.title + '" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+  } else if (post.type === 'video') {
+    media.innerHTML = '<video controls autoplay style="max-width:100%;max-height:100%"><source src="' + post.media + '" type="video/mp4"></video>';
+  } else {
+    media.innerHTML = '<img src="' + post.media + '" alt="' + post.title + '" style="max-width:100%;max-height:100%;object-fit:contain">';
+  }
+  
+  info.innerHTML = `
+    <h2>${post.title}</h2>
+    <div class="modal-date">📅 ${post.date}</div>
+    <p class="modal-desc">${post.desc}</p>
+    <div class="modal-meta">${post.meta.map(m => '<span>' + m + '</span>').join('')}</div>
+  `;
+  
+  modal.classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+
+// 关闭帖子详情
+function closePostModal() {
+  const modal = document.getElementById('postModal');
+  modal.classList.remove('active');
+  document.body.style.overflow = '';
+  const media = document.getElementById('modalMedia');
+  media.innerHTML = '';
+}
+
+// 点击弹窗背景关闭
+document.getElementById('postModal').addEventListener('click', function(e) {
+  if (e.target === this) closePostModal();
+});
+
+// ESC键关闭
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') closePostModal();
+});
 </script>
-</body></html>
+</body>
+</html>
