@@ -43,7 +43,18 @@ export async function onRequestPost(context) {
 ⏰ 提交时间：${timeStr}
 🌐 来源页面：${formData.source}`;
     
-    const wechatWebhookUrl = 'https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=1fc90073-b932-4c07-8090-51512bc71bc5';
+    const wechatWebhookUrl = env.WECOM_WEBHOOK_URL;
+    
+    if (!wechatWebhookUrl) {
+      console.error('WECOM_WEBHOOK_URL environment variable not set');
+      return new Response(JSON.stringify({
+        success: false,
+        message: '服务器配置错误：企业微信Webhook未配置',
+      }), {
+        status: 500,
+        headers: { 'Content-Type': 'application/json' },
+      });
+    }
     
     const wechatPromise = fetch(wechatWebhookUrl, {
       method: 'POST',
@@ -65,7 +76,12 @@ export async function onRequestPost(context) {
     });
     
     // ========== 2. 发送到Google Sheets表格 ==========
-    const googleSheetsUrl = 'https://script.google.com/macros/s/AKfycbym3fhcN-Z2vq5_YZAIinCUR48m-iZvbUjmb3hpP5QKbd56bVnvWXyw8eqzgw-CC1kabw/exec';
+    const googleSheetsUrl = env.GOOGLE_SHEETS_WEBHOOK_URL;
+    
+    if (!googleSheetsUrl) {
+      console.warn('GOOGLE_SHEETS_WEBHOOK_URL not set, skipping Google Sheets sync');
+      var googlePromise = Promise.resolve({ success: true, skipped: true });
+    } else {
     
     const googlePromise = fetch(googleSheetsUrl, {
       method: 'POST',
@@ -83,9 +99,15 @@ export async function onRequestPost(context) {
       console.error('Google Sheets写入异常:', err);
       return { success: false, error: err.message };
     });
+    }
     
     // ========== 3. 发送到CRM系统 ==========
-    const crmWebhookUrl = env.CRM_WEBHOOK_URL || 'https://crm.zhongsai-steelstructure.com/integrations/website/lead';
+    const crmWebhookUrl = env.CRM_WEBHOOK_URL;
+    
+    if (!crmWebhookUrl) {
+      console.warn('CRM_WEBHOOK_URL not set, skipping CRM sync');
+      var crmPromise = Promise.resolve({ success: true, skipped: true });
+    } else {
     
     // 转换为CRM格式
     const crmData = {
@@ -126,6 +148,7 @@ export async function onRequestPost(context) {
       console.error('CRM写入异常:', err);
       return { success: false, error: err.message };
     });
+    }
     
     // ========== 并行执行三个推送 ==========
     const [wechatResult, googleResult, crmResult] = await Promise.all([wechatPromise, googlePromise, crmPromise]);

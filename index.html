@@ -19,7 +19,7 @@
   <nav class="nav" aria-label="主要导航">
     <a href="/zh/products.html">产品</a>
     <a href="/zh/solutions.html">解决方案</a>
-    <a href="/zh/products/materials/index.html">构件与材料</a>
+    <a href="/zh/components.html">构件与材料</a>
     <a href="/zh/projects.html">项目案例</a>
     <a href="/zh/about.html">制造能力</a>
     <a href="/zh/about.html">关于中赛</a>
@@ -28,7 +28,7 @@
 </div><nav class="mobile-nav" data-mobile-nav>
   <a href="/zh/products.html">产品中心</a>
   <a href="/zh/solutions.html">解决方案</a>
-  <a href="/zh/products/materials/index.html">构件与材料</a>
+  <a href="/zh/components.html">构件与材料</a>
   <a href="/zh/projects.html">项目案例</a>
   <a href="/zh/about.html">制造能力</a>
   <a href="/zh/about.html">关于中赛</a>
@@ -138,13 +138,13 @@
       <p>工业厂房、物流仓库、矿业设施、商业建筑、农业棚舍等按用途分类的钢结构方案。</p>
       <small>厂房 / 仓库 / 矿业 / 商业 / 农业</small>
     </a>
-    <a class="entry-card" href="/zh/products/materials/index.html">
+    <a class="entry-card" href="/zh/components.html">
       <span class="entry-num">B</span>
       <h3>结构系统与构件</h3>
       <p>钢柱、钢梁、吊车梁、桁架、支撑、檩条、节点板等按图纸加工的结构构件。</p>
       <small>钢柱 / 钢梁 / 桁架 / 支撑 / 檩条</small>
     </a>
-    <a class="entry-card" href="/zh/services/structural-steel-detailing.html">
+    <a class="entry-card" href="/zh/engineering-design.html">
       <span class="entry-num">C</span>
       <h3>设计与图纸</h3>
       <p>结构计算、深化设计、施工详图、构件编号图、材料清单与安装图纸服务。</p>
@@ -156,7 +156,7 @@
       <p>原材料进厂、切割焊接、表面处理、无损检测、成品检验与包装装柜全流程。</p>
       <small>原材料 / 制造 / 质检 / 包装 / 装柜</small>
     </a>
-    <a class="entry-card" href="/zh/services/steel-structure-export.html">
+    <a class="entry-card" href="/zh/export-delivery.html">
       <span class="entry-num">E</span>
       <h3>地区规范与出口交付</h3>
       <p>按目标国规范设计、出口单证、海运协调、目的港清关支持与海外安装指导。</p>
@@ -167,7 +167,7 @@
 
 <!-- 03 构件展示 -->
 <section class="section"><div class="shell">
-  <div class="heading"><div><p class="index">03 / 构件与材料</p><h2>按图纸加工，<br>每一件都有编号。</h2></div><div><p>从主结构到围护系统，从中赛工厂生产并出口的钢结构构件与材料。构件名称、规格和编号全部写入装箱清单。</p><a href="/zh/products/materials/index.html">查看全部构件 →</a></div></div>
+  <div class="heading"><div><p class="index">03 / 构件与材料</p><h2>按图纸加工，<br>每一件都有编号。</h2></div><div><p>从主结构到围护系统，从中赛工厂生产并出口的钢结构构件与材料。构件名称、规格和编号全部写入装箱清单。</p><a href="/zh/components.html">查看全部构件 →</a></div></div>
 
   <div class="component-showcase">
     <div class="component-img">
@@ -361,68 +361,10 @@
       </div>
       <label>邮箱（可选）<input name="email" type="email" placeholder="name@company.com"></label>
 
-      <!-- 有图纸：上传字段 -->
-      <div class="drawing-upload" data-drawing-upload>
-        <label>上传图纸 / BOQ（可选，支持PDF、DWG、图片）
-          <input type="file" name="drawings" accept=".pdf,.dwg,.dxf,.jpg,.jpeg,.png,.zip,.rar" multiple>
-        </label>
-        <small class="upload-hint">文件较大时可提交后通过微信或邮件发送</small>
+      <!-- 图纸文件说明 -->
+      <div style="background:var(--paper);padding:14px 18px;border-left:3px solid var(--orange);margin:16px 0;font-size:14px;color:var(--ink);line-height:1.6">
+        <strong>图纸文件：</strong>提交需求后，可通过 WhatsApp 或邮箱发送 PDF、DWG、BOQ 和图片文件。
       </div>
-
-      <label>项目类型
-        <select name="projectType">
-          <option value="">请选择</option>
-          <option>工业厂房 / 生产车间</option>
-          <option>仓库 / 物流中心</option>
-          <option>矿业 / 能源设施</option>
-          <option>商业 / 公共建筑</option>
-          <option>农业 / 特种设施</option>
-          <option>钢结构构件 / 材料采购</option>
-        </select>
-      </label>
-
-      <!-- 无图纸：尺寸字段（有图纸时可选） -->
-      <div class="dimensions-fields" data-dimensions>
-        <div class="form-row">
-          <label>长度 (m)<input name="length" type="number" step="0.1" placeholder="例如：60"></label>
-          <label>宽度 (m)<input name="width" type="number" step="0.1" placeholder="例如：24"></label>
-          <label>高度 (m)<input name="height" type="number" step="0.1" placeholder="例如：8"></label>
-        </div>
-        <label class="checkbox-label">
-          <input type="checkbox" name="hasCrane" value="yes">
-          <span>项目需要行车 / 吊车（Crane）</span>
-        </label>
-      </div>
-
-      <label>项目说明 *<textarea name="message" required rows="3" placeholder="有图纸请简述项目要求；无图纸请描述用途、计划时间及其他需求"></textarea></label>
-      <!-- 广告参数隐藏字段 -->
-      <input type="hidden" name="utm_source" value="">
-      <input type="hidden" name="utm_medium" value="">
-      <input type="hidden" name="utm_campaign" value="">
-      <input type="hidden" name="utm_content" value="">
-      <input type="hidden" name="utm_term" value="">
-      <input type="hidden" name="gclid" value="">
-      <input type="hidden" name="gbraid" value="">
-      <input type="hidden" name="wbraid" value="">
-      <input type="hidden" name="fbclid" value="">
-      <input type="hidden" name="language" value="zh">
-      <button class="btn" type="submit">提交项目需求　↗</button>
-      <small class="privacy">信息仅用于本次项目沟通，不会分享给第三方。</small>
-    </form>
-  </div>
-</section>
-</main>
-
-<footer>
-  <div class="shell footer-grid">
-    <div>
-      <a class="brand" href="/"><img src="images/logo-transparent.png" alt="中赛钢构"><span><b>中赛钢构</b><small>ZHONGSAI STEEL STRUCTURE</small></span></a>
-      <p>钢结构设计、深化、制造、出口与海外安装技术指导。</p>
-    </div>
-    <div><b>产品与方案</b><a href="/zh/products.html">产品中心</a><a href="/zh/products/materials/index.html">构件与材料</a><a href="/zh/solutions.html">行业解决方案</a><a href="/zh/projects.html">全球项目案例</a></div>
-    <div><b>了解中赛</b><a href="/zh/about.html">制造能力</a><a href="/zh/about.html">关于我们</a><a href="/zh/blog/">技术文章</a><a href="/zh/contact.html">联系我们</a></div>
-    <div><b>语言</b><a href="/">简体中文</a><a href="/en/">English</a></div>
-  </div>
   <div class="shell copyright"><span>© 2026 深圳市中赛钢结构进出口有限公司</span><span><a href="/zh/privacy.html">隐私政策</a>　<a href="/sitemap.xml">网站地图</a></span></div>
 </footer>
 <a class="float" href="https://wa.me/8613192007378" aria-label="WhatsApp 在线咨询">WA <span>在线咨询</span></a>
