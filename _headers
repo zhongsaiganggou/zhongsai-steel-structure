@@ -8,10 +8,13 @@
 
 /*.html
   Content-Type: text/html; charset=utf-8
-  Cache-Control: public, max-age=86400
+  Cache-Control: public, max-age=300, must-revalidate
 
 /css/*
-  Cache-Control: public, max-age=604800
+  Cache-Control: public, max-age=604800, immutable
+
+/js/*
+  Cache-Control: public, max-age=604800, immutable
 
 /images/*
   Cache-Control: public, max-age=2592000
