@@ -227,24 +227,23 @@
     var btn=f.querySelector('button'),old=btn.innerHTML;
     btn.disabled=true;btn.textContent='正在提交…';
     try{
-      // Include sessionStorage ad params if not already in form
-      var formData=Object.fromEntries(// 合并国家区号和电话号码
-  var phoneCodeEl = form.querySelector('[name="phone_code"]');
-  var phoneNumberEl = form.querySelector('[name="phone_number"]');
-  if (phoneCodeEl && phoneNumberEl) {
-    var fullPhone = phoneCodeEl.value + phoneNumberEl.value.replace(/\s+/g, '');
-    var phoneEl = form.querySelector('[name="phone"]');
-    if (phoneEl) {
-      phoneEl.value = fullPhone;
-    } else {
-      var hiddenPhone = document.createElement('input');
-      hiddenPhone.type = 'hidden';
-      hiddenPhone.name = 'phone';
-      hiddenPhone.value = fullPhone;
-      form.appendChild(hiddenPhone);
-    }
-  }
-  new FormData(f).entries());
+      // 合并国家区号和电话号码
+      var phoneCodeEl = f.querySelector('[name="phone_code"]');
+      var phoneNumberEl = f.querySelector('[name="phone_number"]');
+      if (phoneCodeEl && phoneNumberEl) {
+        var fullPhone = phoneCodeEl.value + phoneNumberEl.value.replace(/\s+/g, '');
+        var phoneEl = f.querySelector('[name="phone"]');
+        if (phoneEl) {
+          phoneEl.value = fullPhone;
+        } else {
+          var hiddenPhone = document.createElement('input');
+          hiddenPhone.type = 'hidden';
+          hiddenPhone.name = 'phone';
+          hiddenPhone.value = fullPhone;
+          f.appendChild(hiddenPhone);
+        }
+      }
+      var formData=Object.fromEntries(new FormData(f).entries());
       try{
         adParams.forEach(function(name){
           if(!formData[name]||formData[name]===''){
