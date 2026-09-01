@@ -212,9 +212,34 @@
   </div>
 </div></section>
 
-<!-- 05 合作流程 -->
+<!-- 05 YouTube视频 - 工厂与交付现场 -->
+<section class="section youtube-section" id="youtube-videos">
+  <div class="shell">
+    <div class="heading">
+      <div>
+        <p class="index">05 / 工厂与交付现场</p>
+        <h2>真实工厂，<br>真实交付。</h2>
+      </div>
+      <div>
+        <p>生产车间、构件加工、包装装柜、出口交付——每一条视频都是中赛钢构的真实工作现场。</p>
+        <a href="https://www.youtube.com/@ZhongSaiSteel" target="_blank" rel="noopener">查看全部视频 →</a>
+      </div>
+    </div>
+    <div class="video-grid" data-video-grid>
+      <!-- 视频卡片由JS动态加载 -->
+      <div class="video-loading">正在加载视频…</div>
+    </div>
+    <div class="video-more">
+      <a href="https://www.youtube.com/@ZhongSaiSteel" target="_blank" rel="noopener" class="btn btn-ghost">
+        在 YouTube 观看更多
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- 06 合作流程 -->
 <section class="section process"><div class="shell">
-  <div class="process-head"><p class="index">05 / 合作流程</p><h2>每一步，都有明确产出。</h2><p>从需求输入到安装指导，流程透明，关键节点可确认。</p></div>
+  <div class="process-head"><p class="index">06 / 合作流程</p><h2>每一步，都有明确产出。</h2><p>从需求输入到安装指导，流程透明，关键节点可确认。</p></div>
   <ol>
     <li><b>01</b><span><strong>需求参数</strong>用途、尺寸、国家、荷载、图纸</span></li>
     <li><b>02</b><span><strong>初步方案</strong>结构建议与预算范围</span></li>
@@ -226,9 +251,9 @@
   </ol>
 </div></section>
 
-<!-- 06 项目案例入口 -->
+<!-- 07 项目案例入口 -->
 <section class="section dark"><div class="shell">
-  <div class="heading heading-light"><div><p class="index">06 / 全球项目</p><h2>已交付的项目，<br>覆盖四大洲。</h2></div><div><p>东南亚、中东、非洲、拉美，工业厂房、物流仓库、矿业设施与商业建筑。每一个项目都有真实的装柜记录和交付资料。</p><a href="/zh/projects.html">查看全部案例 →</a></div></div>
+  <div class="heading heading-light"><div><p class="index">07 / 全球项目</p><h2>已交付的项目，<br>覆盖四大洲。</h2></div><div><p>东南亚、中东、非洲、拉美，工业厂房、物流仓库、矿业设施与商业建筑。每一个项目都有真实的装柜记录和交付资料。</p><a href="/zh/projects.html">查看全部案例 →</a></div></div>
   <div class="cases">
     <a class="case case-main" href="/zh/projects.html">
       <img src="images/project-refinery.jpg" alt="海外工业钢结构项目，中赛钢构设计制造并出口交付" loading="lazy">
@@ -246,12 +271,12 @@
   </div>
 </div></section>
 
-<!-- 07 询价表单 -->
+<!-- 08 询价表单 -->
 <section class="quote" id="quote">
   <img class="quote-bg" src="images/company/factory-yard-gantry-crane.jpg" alt="中赛钢构货场，成品钢构件待装柜出口">
   <div class="shell quote-grid">
     <div class="quote-copy">
-      <p class="index">07 / 项目询价</p>
+      <p class="index">08 / 项目询价</p>
       <h2>把你的项目参数<br>交给工程师。</h2>
       <p>提供几个关键数据，我们会尽快联系您，并给出下一步建议。有图纸可以直接上传或通过邮件发送。</p>
       <div class="direct">
@@ -261,6 +286,20 @@
     </div>
     <form data-form>
       <div class="status" data-status role="status" aria-live="polite"></div>
+
+      <!-- 双入口选择 -->
+      <div class="form-type-switch">
+        <button type="button" class="type-btn active" data-type="hasDrawings">
+          <span class="type-icon">📐</span>
+          <span class="type-text"><strong>有图纸 / BOQ</strong><small>上传图纸，获取加工报价</small></span>
+        </button>
+        <button type="button" class="type-btn" data-type="noDrawings">
+          <span class="type-icon">🏗️</span>
+          <span class="type-text"><strong>暂无图纸</strong><small>需要设计出图方案</small></span>
+        </button>
+      </div>
+      <input type="hidden" name="customerType" value="hasDrawings">
+
       <div class="form-row">
         <label>姓名 / 称呼 *<input name="name" required placeholder="您的姓名"></label>
         <label>项目所在国家 *<input name="country" required placeholder="例如：马来西亚"></label>
@@ -270,6 +309,15 @@
         <label>WhatsApp / 电话 *<input name="phone" required placeholder="含国家区号"></label>
       </div>
       <label>邮箱（可选）<input name="email" type="email" placeholder="name@company.com"></label>
+
+      <!-- 有图纸：上传字段 -->
+      <div class="drawing-upload" data-drawing-upload>
+        <label>上传图纸 / BOQ（可选，支持PDF、DWG、图片）
+          <input type="file" name="drawings" accept=".pdf,.dwg,.dxf,.jpg,.jpeg,.png,.zip,.rar" multiple>
+        </label>
+        <small class="upload-hint">文件较大时可提交后通过微信或邮件发送</small>
+      </div>
+
       <label>项目类型
         <select name="projectType">
           <option value="">请选择</option>
@@ -281,16 +329,21 @@
           <option>钢结构构件 / 材料采购</option>
         </select>
       </label>
-      <div class="form-row">
-        <label>长度 (m)<input name="length" type="number" step="0.1" placeholder="例如：60"></label>
-        <label>宽度 (m)<input name="width" type="number" step="0.1" placeholder="例如：24"></label>
-        <label>高度 (m)<input name="height" type="number" step="0.1" placeholder="例如：8"></label>
+
+      <!-- 无图纸：尺寸字段（有图纸时可选） -->
+      <div class="dimensions-fields" data-dimensions>
+        <div class="form-row">
+          <label>长度 (m)<input name="length" type="number" step="0.1" placeholder="例如：60"></label>
+          <label>宽度 (m)<input name="width" type="number" step="0.1" placeholder="例如：24"></label>
+          <label>高度 (m)<input name="height" type="number" step="0.1" placeholder="例如：8"></label>
+        </div>
+        <label class="checkbox-label">
+          <input type="checkbox" name="hasCrane" value="yes">
+          <span>项目需要行车 / 吊车（Crane）</span>
+        </label>
       </div>
-      <label class="checkbox-label">
-        <input type="checkbox" name="hasCrane" value="yes">
-        <span>项目需要行车 / 吊车（Crane）</span>
-      </label>
-      <label>项目说明 *<textarea name="message" required rows="3" placeholder="是否有图纸、计划时间、其他要求等"></textarea></label>
+
+      <label>项目说明 *<textarea name="message" required rows="3" placeholder="有图纸请简述项目要求；无图纸请描述用途、计划时间及其他需求"></textarea></label>
       <!-- 广告参数隐藏字段 -->
       <input type="hidden" name="utm_source" value="">
       <input type="hidden" name="utm_medium" value="">
