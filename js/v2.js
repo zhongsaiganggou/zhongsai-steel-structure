@@ -81,7 +81,23 @@
         if(btn){btn.disabled=true;btn.innerHTML='提交中…';}
 
         try{
-          var formData=Object.fromEntries(new FormData(f).entries());
+          var formData=Object.fromEntries(// 合并国家区号和电话号码
+  var phoneCodeEl = form.querySelector('[name="phone_code"]');
+  var phoneNumberEl = form.querySelector('[name="phone_number"]');
+  if (phoneCodeEl && phoneNumberEl) {
+    var fullPhone = phoneCodeEl.value + phoneNumberEl.value.replace(/\s+/g, '');
+    var phoneEl = form.querySelector('[name="phone"]');
+    if (phoneEl) {
+      phoneEl.value = fullPhone;
+    } else {
+      var hiddenPhone = document.createElement('input');
+      hiddenPhone.type = 'hidden';
+      hiddenPhone.name = 'phone';
+      hiddenPhone.value = fullPhone;
+      form.appendChild(hiddenPhone);
+    }
+  }
+  new FormData(f).entries());
           // 补充sessionStorage中的广告参数
           try{
             adParams.forEach(function(name){

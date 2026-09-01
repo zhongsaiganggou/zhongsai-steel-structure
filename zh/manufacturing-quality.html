@@ -299,7 +299,29 @@
         </div>
         <div class="form-row-2">
           <div class="form-group"><label>微信 WeChat *</label><input name="wechat" required placeholder="微信号"></div>
-          <div class="form-group"><label>WhatsApp / 电话 *</label><input name="phone" required placeholder="含国家区号"></div>
+          <div class="form-group" style="flex:0 0 160px"><label>国家区号 *</label>
+            <select name="phone_code" required style="width:100%;padding:10px 12px;border:1px solid #cfd3d1;background:#fff;font-size:14px;border-radius:0">
+              <option value="+86">+86 中国</option>
+              <option value="+60">+60 马来西亚</option>
+              <option value="+62">+62 印度尼西亚</option>
+              <option value="+66">+66 泰国</option>
+              <option value="+84">+84 越南</option>
+              <option value="+966">+966 沙特</option>
+              <option value="+971">+971 阿联酋</option>
+              <option value="+254">+254 肯尼亚</option>
+              <option value="+234">+234 尼日利亚</option>
+              <option value="+27">+27 南非</option>
+              <option value="+55">+55 巴西</option>
+              <option value="+52">+52 墨西哥</option>
+              <option value="+63">+63 菲律宾</option>
+              <option value="+880">+880 孟加拉</option>
+              <option value="+7">+7 哈萨克斯坦</option>
+              <option value="+1">+1 美加</option>
+              <option value="+44">+44 英国</option>
+              <option value="+61">+61 澳大利亚</option>
+              <option value="other">其他</option>
+            </select></div>
+          <div class="form-group" style="flex:1"><label>WhatsApp / 电话 *</label><input name="phone_number" required placeholder="手机号码"></div>
         </div>
         <div class="form-group"><label>邮箱（可选）</label><input name="email" type="email" placeholder="name@company.com"></div>
         <div class="form-group" data-drawing-upload><label>上传图纸 / BOQ（可选）</label><input type="file" name="drawings" accept=".pdf,.dwg,.dxf,.jpg,.jpeg,.png,.zip,.rar" multiple></div>
