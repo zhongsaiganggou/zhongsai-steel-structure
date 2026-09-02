@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -15,8 +15,8 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://zhongsai-steelstructure.com/en/solutions.html">
 <link rel="icon" href="../images/logo-transparent.png">
-<link rel="stylesheet" href="../css/rebuild.css">
-<link rel="stylesheet" href="../css/v2.css">
+<link rel="stylesheet" href="/css/rebuild.css">
+<link rel="stylesheet" href="/css/v2.css">
 
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
@@ -38,6 +38,7 @@
 <header class="header" data-header><div class="nav-wrap">
   <a class="brand" href="/en/"><img src="../images/logo-transparent.png" alt="ZhongSai Steel Structure LOGO" width="46" height="46"><span><b>ZHONGSAI</b><small>STEEL STRUCTURE</small></span></a>
   <nav class="nav" aria-label="Main navigation">
+    <a href="/en/">Home</a>
     <a href="/en/products.html">Products</a>
     <a href="/en/solutions.html" class="active">Solutions</a>
     <a href="/en/components.html">Components</a>
@@ -46,19 +47,21 @@
     <a href="/zh/solutions.html" class="lang">中文</a>
   </nav>
   <div class="nav-actions">
-    <a href="/en/contact.html" class="btn btn-small">Get Quote</a>
+    <a href="/en/contact.html#quote-form" class="btn btn-small">Get Quote</a>
     <button class="menu" data-menu aria-label="Open menu" aria-expanded="false"><i></i><i></i></button>
   </div>
 </div></header>
 
 <nav class="mobile-nav" data-mobile-nav aria-label="Mobile navigation">
+  <a href="/en/">Home</a>
   <a href="/en/products.html">Products</a>
   <a href="/en/solutions.html">Solutions</a>
   <a href="/en/components.html">Components</a>
   <a href="/en/projects.html">Projects</a>
+  <a href="/en/blog/">Insights</a>
   <a href="/en/about.html">About</a>
-  <a href="/en/contact.html">Contact</a>
-  <a href="/zh/solutions.html">中文</a>
+  <a href="/en/contact.html#quote-form">Contact</a>
+  <a href="/zh/">中文</a>
 </nav>
 
 <main id="main">
@@ -75,7 +78,7 @@
     <h1>Custom Steel Structure Solutions<br>By Industry & Project Type</h1>
     <p class="lead">From industrial factories to mining facilities, from logistics warehouses to commercial buildings, ZhongSai provides complete steel structure material delivery from design detailing to fabrication and export.</p>
     <div class="page-hero-actions">
-      <a href="/en/contact.html" class="btn-primary">Get Project Quote</a>
+      <a href="/en/contact.html#quote-form" class="btn-primary">Get Project Quote</a>
       <a href="/en/components.html" class="btn-light">View Components</a>
     </div>
   </div>
@@ -151,7 +154,7 @@
     <h3 style="margin:0 0 12px;font-size:18px;color:var(--ink)">Special requirements for your industry?</h3>
     <p style="margin:0 0 16px;color:var(--steel);font-size:14px">Every project has unique structural requirements. Tell us your industry and project needs, and our engineers will develop a tailored steel structure material supply solution.</p>
     <div style="display:flex;gap:12px">
-      <a href="/en/contact.html" style="padding:10px 20px;background:var(--orange);color:#fff;text-decoration:none;font-size:14px;font-weight:600">Request Industry Solution</a>
+      <a href="/en/contact.html#quote-form" style="padding:10px 20px;background:var(--orange);color:#fff;text-decoration:none;font-size:14px;font-weight:600">Request Industry Solution</a>
       <a href="/en/manufacturing-quality.html" style="padding:10px 20px;background:var(--ink);color:#fff;text-decoration:none;font-size:14px;font-weight:600">View Manufacturing Capability</a>
     </div>
   </div>
@@ -172,11 +175,7 @@
       <h3>Project Inquiry</h3>
       <form class="v2-form" data-form>
         <div class="form-status" data-status role="status" aria-live="polite"></div>
-        <div class="form-type-switch">
-          <button type="button" class="type-btn active" data-type="hasDrawings"><div class="type-text"><strong>Have Drawings / BOQ</strong><small>Upload for fabrication quote</small></div></button>
-          <button type="button" class="type-btn" data-type="noDrawings"><div class="type-text"><strong>No Drawings Yet</strong><small>Need design solution</small></div></button>
-        </div>
-        <input type="hidden" name="customerType" value="hasDrawings">
+        
         <div class="form-row-2">
           <div class="form-group"><label>Name *</label><input name="name" required placeholder="Your name"></div>
           <div class="form-group"><label>Project Country *</label>
@@ -330,7 +329,7 @@
               <option value="+61">+61 澳大利亚</option>
               <option value="other">其他</option>
             </select></div>
-          <div class="form-group" style="flex:1"><label>WhatsApp / Phone *</label><input name="phone_number" required placeholder="手机号码"></div>
+          <div class="form-group" style="flex:1"><label>WhatsApp / Phone *</label><input name="phone_number" required placeholder="Phone Number"></div>
         </div>
         <div class="form-group"><label>Email (optional)</label><input name="email" type="email" placeholder="name@company.com"></div>
         <div class="form-group" data-drawing-upload><label>Upload Drawings / BOQ (optional)</label><input type="file" name="drawings" accept=".pdf,.dwg,.dxf,.jpg,.jpeg,.png,.zip,.rar" multiple></div>
@@ -381,7 +380,9 @@
       <a href="/en/about.html">About ZhongSai</a>
       <a href="/en/projects.html">Projects</a>
       <a href="/en/components.html">Components</a>
-      <a href="/en/contact.html">Contact</a>
+      <a href="/en/blog/">Insights</a>
+      <a href="/en/shipments.html">Shipping Updates</a>
+      <a href="/en/contact.html#quote-form">Contact</a>
     </div>
     <div>
       <b>Contact</b>
@@ -401,6 +402,8 @@
   <span class="whatsapp-tooltip">WhatsApp</span>
 </a>
 
-<script src="../js/v2.js"></script>
+<script src="/js/site-nav.final.v6.js" defer></script>
+<script src="/js/v2.js?v=20260902-1" defer></script>
+
 </body>
 </html>

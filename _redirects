@@ -1,0 +1,31 @@
+# 博客文章MERGE 301重定向
+# 重复主题文章合并到主文章
+
+# === 中文博客 ===
+# 厂房成本重复 → 保留 steel-workshop-cost-factory-building-price
+/zh/blog/gangjiegou-changfang-zaojia-zhinan /zh/blog/steel-workshop-cost-factory-building-price 301
+/zh/blog/gangjiegou-changfang-zaojia-zhinan.html /zh/blog/steel-workshop-cost-factory-building-price 301
+
+# 仓库成本重复 → 保留 steel-warehouse-cost-complete-guide
+/zh/blog/gangjiegou-cangku-zaojia-duoshaoqian /zh/blog/steel-warehouse-cost-complete-guide 301
+/zh/blog/gangjiegou-cangku-zaojia-duoshaoqian.html /zh/blog/steel-warehouse-cost-complete-guide 301
+
+/zh/blog/how-much-does-steel-structure-warehouse-cost /zh/blog/steel-warehouse-cost-complete-guide 301
+/zh/blog/how-much-does-steel-structure-warehouse-cost.html /zh/blog/steel-warehouse-cost-complete-guide 301
+
+# 厂家排名重复 → 保留 zhongguo-gangjiegou-changjia-paiming
+/zh/blog/top-10-steel-structure-manufacturers-in-china /zh/blog/zhongguo-gangjiegou-changjia-paiming 301
+/zh/blog/top-10-steel-structure-manufacturers-in-china.html /zh/blog/zhongguo-gangjiegou-changjia-paiming 301
+
+# === 英文博客 ===
+# 仓库成本重复 → 保留 steel-warehouse-cost
+/en/blog/how-much-does-steel-structure-warehouse-cost /en/blog/steel-warehouse-cost 301
+/en/blog/how-much-does-steel-structure-warehouse-cost.html /en/blog/steel-warehouse-cost 301
+
+# 厂房成本重复 → 保留 steel-workshop-cost
+/en/blog/steel-workshop-cost-factory-building-price /en/blog/steel-workshop-cost 301
+/en/blog/steel-workshop-cost-factory-building-price.html /en/blog/steel-workshop-cost 301
+
+# 安装指南重复 → 保留 prefab-steel-building-installation-guide
+/en/blog/steel-structure-building-installation-guide-overseas /en/blog/prefab-steel-building-installation-guide 301
+/en/blog/steel-structure-building-installation-guide-overseas.html /en/blog/prefab-steel-building-installation-guide 301

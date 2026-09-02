@@ -1,12 +1,6 @@
 (function(){
-  // Header scroll & mobile menu
-  var h=document.querySelector('[data-header]'),
-      b=document.querySelector('[data-menu]'),
-      m=document.querySelector('[data-mobile-nav]');
-  function s(){h&&h.classList.toggle('scrolled',scrollY>24)}
-  s();addEventListener('scroll',s,{passive:true});
-  if(b){b.onclick=function(){var o=h.classList.toggle('open');document.body.classList.toggle('menu-open',o);b.setAttribute('aria-expanded',o);b.setAttribute('aria-label',o?'关闭菜单':'打开菜单')}}
-  if(m)m.onclick=function(e){if(e.target.closest('a')){h.classList.remove('open');document.body.classList.remove('menu-open');b.setAttribute('aria-expanded','false')}}
+  // Header scroll & mobile menu 已移至 /js/site-nav.20260902.js
+  // 全站菜单只能由 site-nav.js 控制，避免重复绑定事件
 
   // YouTube视频加载 - 工厂与交付现场
   function loadYouTubeVideos(){
@@ -163,34 +157,17 @@
     loadYouTubeVideos();
   }
 
-  // Form dual-entry switch (有图纸 / 无图纸)
-  var typeBtns=document.querySelectorAll('.type-btn');
-  var customerTypeInput=document.querySelector('input[name="customerType"]');
-  var drawingUpload=document.querySelector('[data-drawing-upload]');
-  var dimensionsFields=document.querySelector('[data-dimensions]');
-
-  function switchFormType(type){
-    typeBtns.forEach(function(btn){
-      btn.classList.toggle('active',btn.dataset.type===type);
-    });
-    if(customerTypeInput)customerTypeInput.value=type;
-
-    if(type==='hasDrawings'){
-      // 有图纸：显示上传，尺寸字段可选但保留
-      if(drawingUpload)drawingUpload.style.display='block';
-      if(dimensionsFields)dimensionsFields.style.opacity='1';
-    }else{
-      // 无图纸：隐藏上传，强调尺寸字段
-      if(drawingUpload)drawingUpload.style.display='none';
-      if(dimensionsFields)dimensionsFields.style.opacity='1';
-    }
+  // Form dual-entry switch (已移除，统一为单一表单)
+  function initFormSwitch(){
+    // 双入口切换已移除，上传图纸作为可选项
   }
 
-  typeBtns.forEach(function(btn){
-    btn.addEventListener('click',function(){
-      switchFormType(btn.dataset.type);
-    });
-  });
+  // Initialize form switch when DOM is ready (已禁用)
+  // if(document.readyState==='loading'){
+  //   document.addEventListener('DOMContentLoaded',initFormSwitch);
+  // }else{
+  //   initFormSwitch();
+  // }
 
   // Capture advertising params from URL and fill hidden fields
   var adParams=['utm_source','utm_medium','utm_campaign','utm_content','utm_term','gclid','gbraid','wbraid','fbclid'];
@@ -270,8 +247,6 @@
       if(!r.ok||!j.success)throw Error();
       msg('需求已提交，我们会尽快与您联系。如有图纸文件，请通过微信或邮件发送。','ok');
       f.reset();
-      // Reset form type to default
-      switchFormType('hasDrawings');
     }catch(x){
       msg('暂时无法提交，请通过 WhatsApp 或邮箱联系我们。','error');
     }finally{

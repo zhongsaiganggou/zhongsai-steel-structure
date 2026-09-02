@@ -24,22 +24,10 @@
     });
   }
 
-  /* ===== 表单双入口切换 ===== */
+  /* ===== 表单双入口切换（已移除，保留空函数避免报错） ===== */
   function initFormTypeSwitch(){
-    var typeBtns=document.querySelectorAll('.type-btn');
-    var customerTypeInput=document.querySelector('input[name="customerType"]');
-    var drawingUpload=document.querySelector('[data-drawing-upload]');
-
-    typeBtns.forEach(function(btn){
-      btn.addEventListener('click',function(){
-        typeBtns.forEach(function(b){b.classList.remove('active')});
-        btn.classList.add('active');
-        if(customerTypeInput)customerTypeInput.value=btn.dataset.type;
-        if(drawingUpload){
-          drawingUpload.style.display=btn.dataset.type==='hasDrawings'?'block':'none';
-        }
-      });
-    });
+    // 双入口切换已移除，统一为单一表单
+    // 上传图纸作为可选项，有图纸的用户可通过WhatsApp或邮箱发送
   }
 
   /* ===== 广告参数捕获 ===== */
@@ -220,31 +208,10 @@
       .catch(function(){render(fallbackVideos)});
   }
 
-  /* ===== 页头滚动效果 ===== */
+  /* ===== 页头滚动效果（已移至 site-nav.20260902.js，避免重复绑定事件） ===== */
   function initHeader(){
-    var header=document.querySelector('[data-header]');
-    if(!header)return;
-    function onScroll(){header.classList.toggle('scrolled',window.scrollY>24);}
-    onScroll();
-    window.addEventListener('scroll',onScroll,{passive:true});
-
-    var menuBtn=document.querySelector('[data-menu]');
-    var mobileNav=document.querySelector('[data-mobile-nav]');
-    if(menuBtn){
-      menuBtn.addEventListener('click',function(){
-        var open=header.classList.toggle('open');
-        document.body.classList.toggle('menu-open',open);
-        menuBtn.setAttribute('aria-expanded',open);
-      });
-    }
-    if(mobileNav){
-      mobileNav.addEventListener('click',function(e){
-        if(e.target.closest('a')){
-          header.classList.remove('open');
-          document.body.classList.remove('menu-open');
-        }
-      });
-    }
+    // 页头滚动和移动端菜单已在 /js/site-nav.20260902.js 中实现
+    // 此函数保留为空，避免重复绑定事件导致冲突
   }
 
   /* ===== 初始化 ===== */

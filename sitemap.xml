@@ -67,19 +67,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://zhongsai-steelstructure.com/en/blog/how-much-does-steel-structure-warehouse-cost</loc>
-    <lastmod>2026-08-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://zhongsai-steelstructure.com/en/blog/how-to-import-steel-structure-from-china-to-africa</loc>
-    <lastmod>2026-08-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://zhongsai-steelstructure.com/en/blog/steel-structure-building-installation-guide-overseas</loc>
     <lastmod>2026-08-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -224,12 +212,6 @@
   </url>
   <url>
     <loc>https://zhongsai-steelstructure.com/en/blog/steel-warehouse-cost-complete-guide</loc>
-    <lastmod>2026-08-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://zhongsai-steelstructure.com/en/blog/steel-workshop-cost-factory-building-price</loc>
     <lastmod>2026-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -823,18 +805,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://zhongsai-steelstructure.com/zh/blog/gangjiegou-changfang-zaojia-zhinan</loc>
-    <lastmod>2026-08-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://zhongsai-steelstructure.com/zh/blog/gangjiegou-cangku-zaojia-duoshaoqian</loc>
-    <lastmod>2026-08-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://zhongsai-steelstructure.com/zh/blog/gangjiegou-vs-hunningtu-chengben-duibi</loc>
     <lastmod>2026-08-24</lastmod>
     <changefreq>monthly</changefreq>
@@ -860,12 +830,6 @@
   </url>
   <url>
     <loc>https://zhongsai-steelstructure.com/zh/blog/astm-vs-gb-steel-grades-comparison</loc>
-    <lastmod>2026-08-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://zhongsai-steelstructure.com/zh/blog/how-much-does-steel-structure-warehouse-cost</loc>
     <lastmod>2026-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -997,12 +961,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://zhongsai-steelstructure.com/zh/blog/top-10-steel-structure-manufacturers-in-china</loc>
-    <lastmod>2026-08-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://zhongsai-steelstructure.com/zh/products/industrial</loc>
     <lastmod>2026-08-27</lastmod>
     <changefreq>weekly</changefreq>
@@ -1108,6 +1066,19 @@
     <loc>https://zhongsai-steelstructure.com/zh/projects/china-cnooc-pipe-rack</loc>
     <lastmod>2026-08-27</lastmod>
     <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://zhongsai-steelstructure.com/zh/components</loc>
+    <lastmod>2026-09-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zhongsai-steelstructure.com/en/components</loc>
+    <lastmod>2026-09-02</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 </urlset>

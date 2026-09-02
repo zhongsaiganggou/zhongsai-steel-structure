@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
@@ -15,8 +15,8 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://zhongsai-steelstructure.com/zh/components.html">
 <link rel="icon" href="../images/logo-transparent.png">
-<link rel="stylesheet" href="../css/rebuild.css">
-<link rel="stylesheet" href="../css/v2.css">
+<link rel="stylesheet" href="/css/rebuild.css">
+<link rel="stylesheet" href="/css/v2.css">
 
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
@@ -39,6 +39,7 @@
 <header class="header" data-header><div class="nav-wrap">
   <a class="brand" href="/"><img src="../images/logo-transparent.png" alt="中赛钢构 LOGO" width="46" height="46"><span><b>中赛钢构</b><small>ZHONGSAI STEEL STRUCTURE</small></span></a>
   <nav class="nav" aria-label="主要导航">
+    <a href="/zh/">首页</a>
     <a href="/zh/products.html">产品</a>
     <a href="/zh/solutions.html">解决方案</a>
     <a href="/zh/components.html" class="active">构件与材料</a>
@@ -47,20 +48,22 @@
     <a href="/en/components.html" class="lang">EN</a>
   </nav>
   <div class="nav-actions">
-    <a href="/zh/contact.html" class="btn btn-small">获取报价</a>
+    <a href="/zh/contact.html#quote-form" class="btn btn-small">获取报价</a>
     <button class="menu" data-menu aria-label="打开菜单" aria-expanded="false"><i></i><i></i></button>
   </div>
 </div></header>
 
 <!-- 移动端菜单 -->
 <nav class="mobile-nav" data-mobile-nav aria-label="移动端导航">
+  <a href="/zh/">首页</a>
   <a href="/zh/products.html">产品中心</a>
   <a href="/zh/solutions.html">解决方案</a>
   <a href="/zh/components.html">构件与材料</a>
   <a href="/zh/projects.html">项目案例</a>
+  <a href="/zh/blog/">技术文章</a>
   <a href="/zh/about.html">关于中赛</a>
-  <a href="/zh/contact.html">联系我们</a>
-  <a href="/en/components.html">English</a>
+  <a href="/zh/contact.html#quote-form">联系我们</a>
+  <a href="/en/">English</a>
 </nav>
 
 <main id="main">
@@ -79,7 +82,7 @@
     <h1>钢结构构件与材料<br>按图纸定制加工出口</h1>
     <p class="lead">钢柱、钢梁、吊车梁、桁架、檩条、支撑、螺栓、围护系统——中赛钢构提供完整的钢结构构件和配套材料，按项目图纸定制加工，编号包装出口。</p>
     <div class="page-hero-actions">
-      <a href="/zh/contact.html" class="btn-primary">获取项目报价</a>
+      <a href="/zh/contact.html#quote-form" class="btn-primary">获取项目报价</a>
       <a href="/zh/components.html" class="btn-light">查看构件与材料</a>
     </div>
   </div>
@@ -88,80 +91,124 @@
 <!-- 构件与材料中心 -->
 <section class="page-content"><div class="shell">
   <div class="content-block">
-    <p class="eyebrow">STRUCTURAL COMPONENTS / 结构构件</p>
-    <h2>按图纸定制的钢结构构件</h2>
-    <p>中赛钢构根据结构图纸、深化图和BOQ加工各类钢结构构件。从主结构到次结构，从围护系统到配套材料，每件构件按安装图编号，包装出口。</p>
+    <p class="eyebrow">STRUCTURAL COMPONENTS & MATERIALS / 构件与材料</p>
+    <h2>按图纸定制的钢结构构件与围护系统</h2>
+    <p>中赛钢构根据结构图纸、深化图和BOQ加工各类钢结构构件和围护系统材料。从主结构到次结构，从屋面板到墙面板，每件构件按安装图编号，包装出口。</p>
   </div>
 
-  <!-- 主结构构件 -->
-  <div style="margin:40px 0">
+  <!-- 第一部分：钢构件 -->
+  <div style="margin:50px 0">
     <div style="aspect-ratio:21/9;overflow:hidden;background:#0b1720;margin-bottom:24px">
-      <img src="../images/components/steel-members-heavy-box-columns-trusses.jpg" alt="中赛钢构按图纸加工的钢柱、钢梁、箱型构件和桁架" loading="lazy" style="width:100%;height:100%;object-fit:cover">
+      <img src="../images/components/brochure-steel-members-overview.jpg" alt="中赛钢构按图纸加工的钢柱、钢梁、箱型构件、吊车梁和桁架" loading="lazy" style="width:100%;height:100%;object-fit:cover">
     </div>
-  <div style="margin:40px 0">
-    <h3 style="margin:0 0 20px;font-size:20px;color:var(--ink);padding-bottom:12px;border-bottom:2px solid var(--orange)">主结构构件 / Primary Structural Components</h3>
-    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px">
+    <h3 style="margin:0 0 8px;font-size:24px;color:var(--ink)">钢构件 / Steel Structural Members</h3>
+    <p style="margin:0 0 24px;color:var(--steel);font-size:15px;line-height:1.7">根据结构图纸和深化图定制加工主结构和次结构钢构件，包括钢柱、钢梁、焊接H型钢、箱型柱、吊车梁、钢桁架、支撑系统、钢平台和节点板。每件构件按安装图编号，配套螺栓和连接件。</p>
+
+    <h4 style="margin:0 0 16px;font-size:18px;color:var(--ink);padding-bottom:10px;border-bottom:2px solid var(--orange)">主结构构件 / Primary Structural Components</h4>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:32px">
       <div style="background:#fff;border:1px solid var(--line);padding:20px">
-        <h4 style="margin:0 0 8px;font-size:16px;color:var(--ink)">钢柱 Steel Columns</h4>
+        <h5 style="margin:0 0 8px;font-size:16px;color:var(--ink)">钢柱 Steel Columns</h5>
         <p style="margin:0;color:var(--steel);font-size:13px;line-height:1.6">H型钢柱、箱型柱、变截面柱，按图纸加工节点板和螺栓孔。</p>
       </div>
       <div style="background:#fff;border:1px solid var(--line);padding:20px">
-        <h4 style="margin:0 0 8px;font-size:16px;color:var(--ink)">钢梁 Steel Beams</h4>
+        <h5 style="margin:0 0 8px;font-size:16px;color:var(--ink)">钢梁 Steel Beams</h5>
         <p style="margin:0;color:var(--steel);font-size:13px;line-height:1.6">焊接H型钢梁、吊车梁、屋面梁，带加劲肋和连接节点。</p>
       </div>
       <div style="background:#fff;border:1px solid var(--line);padding:20px">
-        <h4 style="margin:0 0 8px;font-size:16px;color:var(--ink)">焊接H型钢 Welded H Sections</h4>
+        <h5 style="margin:0 0 8px;font-size:16px;color:var(--ink)">焊接H型钢 Welded H Sections</h5>
         <p style="margin:0;color:var(--steel);font-size:13px;line-height:1.6">按指定截面尺寸焊接成型，适用于大跨度和重荷载结构。</p>
       </div>
       <div style="background:#fff;border:1px solid var(--line);padding:20px">
-        <h4 style="margin:0 0 8px;font-size:16px;color:var(--ink)">箱型柱 Box Columns</h4>
+        <h5 style="margin:0 0 8px;font-size:16px;color:var(--ink)">箱型柱 Box Columns</h5>
         <p style="margin:0;color:var(--steel);font-size:13px;line-height:1.6">焊接箱型截面柱，适用于高层和重型工业建筑。</p>
       </div>
       <div style="background:#fff;border:1px solid var(--line);padding:20px">
-        <h4 style="margin:0 0 8px;font-size:16px;color:var(--ink)">吊车梁 Crane Beams</h4>
+        <h5 style="margin:0 0 8px;font-size:16px;color:var(--ink)">吊车梁 Crane Beams</h5>
         <p style="margin:0;color:var(--steel);font-size:13px;line-height:1.6">按吊车吨位和跨度设计加工，带制动结构和轨道连接。</p>
       </div>
       <div style="background:#fff;border:1px solid var(--line);padding:20px">
-        <h4 style="margin:0 0 8px;font-size:16px;color:var(--ink)">钢桁架 Steel Trusses</h4>
+        <h5 style="margin:0 0 8px;font-size:16px;color:var(--ink)">钢桁架 Steel Trusses</h5>
         <p style="margin:0;color:var(--steel);font-size:13px;line-height:1.6">屋架、托架、管桁架，按图纸加工节点和杆件。</p>
       </div>
       <div style="background:#fff;border:1px solid var(--line);padding:20px">
-        <h4 style="margin:0 0 8px;font-size:16px;color:var(--ink)">支撑系统 Bracing</h4>
+        <h5 style="margin:0 0 8px;font-size:16px;color:var(--ink)">支撑系统 Bracing</h5>
         <p style="margin:0;color:var(--steel);font-size:13px;line-height:1.6">柱间支撑、屋面支撑、水平支撑，保证结构整体稳定。</p>
       </div>
       <div style="background:#fff;border:1px solid var(--line);padding:20px">
-        <h4 style="margin:0 0 8px;font-size:16px;color:var(--ink)">钢平台 Steel Platforms</h4>
+        <h5 style="margin:0 0 8px;font-size:16px;color:var(--ink)">钢平台 Steel Platforms</h5>
         <p style="margin:0;color:var(--steel);font-size:13px;line-height:1.6">设备平台、操作平台、楼梯栏杆，按设备荷载设计。</p>
       </div>
       <div style="background:#fff;border:1px solid var(--line);padding:20px">
-        <h4 style="margin:0 0 8px;font-size:16px;color:var(--ink)">节点板 Connection Plates</h4>
+        <h5 style="margin:0 0 8px;font-size:16px;color:var(--ink)">节点板 Connection Plates</h5>
         <p style="margin:0;color:var(--steel);font-size:13px;line-height:1.6">按连接设计加工节点板、加劲肋、连接板，精确钻孔。</p>
+      </div>
+    </div>
+
+    <h4 style="margin:0 0 16px;font-size:18px;color:var(--ink);padding-bottom:10px;border-bottom:2px solid var(--orange)">次结构与连接件 / Secondary Components & Fasteners</h4>
+    <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:24px">
+      <div style="background:#fff;border:1px solid var(--line);padding:24px">
+        <h5 style="margin:0 0 12px;font-size:16px;color:var(--ink)">次结构构件</h5>
+        <ul style="margin:0;padding:0;list-style:none">
+          <li style="padding:8px 0;border-bottom:1px solid var(--line);font-size:14px;color:var(--steel)">C/Z型钢檩条 C/Z Purlins</li>
+          <li style="padding:8px 0;border-bottom:1px solid var(--line);font-size:14px;color:var(--steel)">拉条、隅撑、系杆 Sag rods, girts, tie rods</li>
+          <li style="padding:8px 0;font-size:14px;color:var(--steel)">屋面檩条、墙梁 Roof purlins, wall girts</li>
+        </ul>
+      </div>
+      <div style="background:#fff;border:1px solid var(--line);padding:24px">
+        <h5 style="margin:0 0 12px;font-size:16px;color:var(--ink)">连接件与紧固件</h5>
+        <ul style="margin:0;padding:0;list-style:none">
+          <li style="padding:8px 0;border-bottom:1px solid var(--line);font-size:14px;color:var(--steel)">高强螺栓 High-Strength Bolts</li>
+          <li style="padding:8px 0;border-bottom:1px solid var(--line);font-size:14px;color:var(--steel)">地脚螺栓 Anchor Bolts</li>
+          <li style="padding:8px 0;font-size:14px;color:var(--steel)">自攻螺丝、铆钉 Self-tapping screws, rivets</li>
+        </ul>
       </div>
     </div>
   </div>
 
-  <!-- 次结构与围护材料 -->
-  <div style="margin:40px 0">
-    <h3 style="margin:0 0 20px;font-size:20px;color:var(--ink);padding-bottom:12px;border-bottom:2px solid var(--orange)">次结构与围护材料 / Secondary Components & Envelope</h3>
+  <!-- 第二部分：围护系统 -->
+  <div style="margin:60px 0">
+    <div style="aspect-ratio:21/9;overflow:hidden;background:#0b1720;margin-bottom:24px">
+      <img src="../images/components/brochure-envelope-system-overview.jpg" alt="中赛钢构屋面与墙面围护系统，包括彩钢板、夹芯板、采光板和楼承板" loading="lazy" style="width:100%;height:100%;object-fit:cover">
+    </div>
+    <h3 style="margin:0 0 8px;font-size:24px;color:var(--ink)">屋面与墙面围护系统 / Roof & Wall Envelope System</h3>
+    <p style="margin:0 0 24px;color:var(--steel);font-size:15px;line-height:1.7">提供完整的钢结构建筑围护系统材料，包括屋面板、墙面板、夹芯板、采光板、楼承板、天沟、泛水和收边配件。按项目要求选择材料厚度、涂层和保温等级。</p>
+
     <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:24px">
-      <div>
-        <h4 style="margin:0 0 12px;font-size:16px;color:var(--ink)">次结构构件</h4>
+      <div style="background:#fff;border:1px solid var(--line);padding:24px">
+        <h4 style="margin:0 0 12px;font-size:18px;color:var(--ink)">屋面系统 / Roof System</h4>
         <ul style="margin:0;padding:0;list-style:none">
-          <li style="padding:8px 0;border-bottom:1px solid var(--line);font-size:14px;color:var(--steel)">C/Z型钢檩条 C/Z Purlins</li>
-          <li style="padding:8px 0;border-bottom:1px solid var(--line);font-size:14px;color:var(--steel)">高强螺栓 High-Strength Bolts</li>
-          <li style="padding:8px 0;border-bottom:1px solid var(--line);font-size:14px;color:var(--steel)">地脚螺栓 Anchor Bolts</li>
-          <li style="padding:8px 0;font-size:14px;color:var(--steel)">拉条、隅撑、系杆</li>
+          <li style="padding:8px 0;border-bottom:1px solid var(--line);font-size:14px;color:var(--steel)">直立锁边屋面板 Standing Seam Roof Panels</li>
+          <li style="padding:8px 0;border-bottom:1px solid var(--line);font-size:14px;color:var(--steel)">彩钢压型屋面板 Color Steel Roof Panels</li>
+          <li style="padding:8px 0;border-bottom:1px solid var(--line);font-size:14px;color:var(--steel)">保温夹芯屋面板 Insulated Sandwich Roof Panels</li>
+          <li style="padding:8px 0;border-bottom:1px solid var(--line);font-size:14px;color:var(--steel)">采光板 Skylight Panels / FRP Panels</li>
+          <li style="padding:8px 0;font-size:14px;color:var(--steel)">通风气楼、屋脊通风器 Ventilation Ridge</li>
         </ul>
       </div>
-      <div>
-        <h4 style="margin:0 0 12px;font-size:16px;color:var(--ink)">围护系统材料</h4>
+      <div style="background:#fff;border:1px solid var(--line);padding:24px">
+        <h4 style="margin:0 0 12px;font-size:18px;color:var(--ink)">墙面系统 / Wall System</h4>
         <ul style="margin:0;padding:0;list-style:none">
-          <li style="padding:8px 0;border-bottom:1px solid var(--line);font-size:14px;color:var(--steel)">屋面板 Roof Panels</li>
-          <li style="padding:8px 0;border-bottom:1px solid var(--line);font-size:14px;color:var(--steel)">墙面板 Wall Panels</li>
-          <li style="padding:8px 0;border-bottom:1px solid var(--line);font-size:14px;color:var(--steel)">夹芯板 Sandwich Panels</li>
-          <li style="padding:8px 0;border-bottom:1px solid var(--line);font-size:14px;color:var(--steel)">采光板 Skylight Panels</li>
-          <li style="padding:8px 0;border-bottom:1px solid var(--line);font-size:14px;color:var(--steel)">楼承板 Steel Deck</li>
-          <li style="padding:8px 0;font-size:14px;color:var(--steel)">天沟、泛水、收边配件</li>
+          <li style="padding:8px 0;border-bottom:1px solid var(--line);font-size:14px;color:var(--steel)">彩钢墙面板 Color Steel Wall Panels</li>
+          <li style="padding:8px 0;border-bottom:1px solid var(--line);font-size:14px;color:var(--steel)">保温夹芯墙面板 Insulated Sandwich Wall Panels</li>
+          <li style="padding:8px 0;border-bottom:1px solid var(--line);font-size:14px;color:var(--steel)">聚氨酯夹芯板 PU Sandwich Panels</li>
+          <li style="padding:8px 0;border-bottom:1px solid var(--line);font-size:14px;color:var(--steel)">岩棉夹芯板 Rock Wool Sandwich Panels</li>
+          <li style="padding:8px 0;font-size:14px;color:var(--steel)">玻璃丝棉夹芯板 Glass Wool Sandwich Panels</li>
+        </ul>
+      </div>
+      <div style="background:#fff;border:1px solid var(--line);padding:24px">
+        <h4 style="margin:0 0 12px;font-size:18px;color:var(--ink)">楼承板与楼板 / Floor Deck</h4>
+        <ul style="margin:0;padding:0;list-style:none">
+          <li style="padding:8px 0;border-bottom:1px solid var(--line);font-size:14px;color:var(--steel)">开口式楼承板 Open Type Steel Deck</li>
+          <li style="padding:8px 0;border-bottom:1px solid var(--line);font-size:14px;color:var(--steel)">闭口式楼承板 Closed Type Steel Deck</li>
+          <li style="padding:8px 0;font-size:14px;color:var(--steel)">钢筋桁架楼承板 Steel Bar Truss Deck</li>
+        </ul>
+      </div>
+      <div style="background:#fff;border:1px solid var(--line);padding:24px">
+        <h4 style="margin:0 0 12px;font-size:18px;color:var(--ink)">配件与收边 / Accessories & Trims</h4>
+        <ul style="margin:0;padding:0;list-style:none">
+          <li style="padding:8px 0;border-bottom:1px solid var(--line);font-size:14px;color:var(--steel)">天沟、雨水管 Gutters & Downpipes</li>
+          <li style="padding:8px 0;border-bottom:1px solid var(--line);font-size:14px;color:var(--steel)">泛水、收边件 Flashings & Trims</li>
+          <li style="padding:8px 0;border-bottom:1px solid var(--line);font-size:14px;color:var(--steel)">门窗框、包边 Door & Window Frames</li>
+          <li style="padding:8px 0;font-size:14px;color:var(--steel)">密封胶、防水胶带 Sealants & Waterproof Tape</li>
         </ul>
       </div>
     </div>
@@ -171,8 +218,8 @@
   <div style="background:var(--paper);padding:32px;margin:40px 0">
     <h3 style="margin:0 0 12px;font-size:18px;color:var(--ink)">有图纸？直接发送给我们</h3>
     <p style="margin:0 0 16px;color:var(--steel);font-size:14px">提供结构图纸、深化图或BOQ，我们的工程师会核对构件清单，给出加工报价和交付计划。每件构件按安装图编号，包装清单同步交付。</p>
-    <div style="display:flex;gap:12px">
-      <a href="/zh/contact.html" style="padding:10px 20px;background:var(--orange);color:#fff;text-decoration:none;font-size:14px;font-weight:600">发送图纸询价</a>
+    <div style="display:flex;gap:12px;flex-wrap:wrap">
+      <a href="/zh/contact.html#quote-form" style="padding:10px 20px;background:var(--orange);color:#fff;text-decoration:none;font-size:14px;font-weight:600">发送图纸询价</a>
       <a href="/zh/manufacturing-quality.html" style="padding:10px 20px;background:var(--ink);color:#fff;text-decoration:none;font-size:14px;font-weight:600">查看制造流程</a>
     </div>
   </div>
@@ -194,11 +241,7 @@
       <h3>项目询价</h3>
       <form class="v2-form" data-form>
         <div class="form-status" data-status role="status" aria-live="polite"></div>
-        <div class="form-type-switch">
-          <button type="button" class="type-btn active" data-type="hasDrawings"><div class="type-text"><strong>有图纸 / BOQ</strong><small>上传图纸获取加工报价</small></div></button>
-          <button type="button" class="type-btn" data-type="noDrawings"><div class="type-text"><strong>暂无图纸</strong><small>需要设计出图方案</small></div></button>
-        </div>
-        <input type="hidden" name="customerType" value="hasDrawings">
+        
         <div class="form-row-2">
           <div class="form-group"><label>姓名 / 称呼 *</label><input name="name" required placeholder="您的姓名"></div>
           <div class="form-group"><label>项目所在国家 *</label>
@@ -390,7 +433,7 @@
       <b>中赛钢构 ZHONGSAI STEEL</b>
       <p>钢结构设计、深化、制造与出口交付</p>
       <p>10万㎡生产基地 · 10万吨年产能</p>
-      <p>服务60+国家和地区</p>
+      <p>和地区</p>
     </div>
     <div>
       <b>产品</b>
@@ -403,8 +446,8 @@
       <b>了解</b>
       <a href="/zh/about.html">关于中赛</a>
       <a href="/zh/projects.html">项目案例</a>
-      <a href="/zh/components.html class="active">构件与材料</a>
-      <a href="/zh/contact.html">联系我们</a>
+      <a href="/zh/components.html" class="active">构件与材料</a>
+      <a href="/zh/contact.html#quote-form">联系我们</a>
     </div>
     <div>
       <b>联系</b>
@@ -425,6 +468,8 @@
   <span class="whatsapp-tooltip">WhatsApp咨询</span>
 </a>
 
-<script src="../js/v2.js"></script>
+<script src="/js/site-nav.final.v6.js" defer></script>
+<script src="/js/v2.js?v=20260902-1" defer></script>
+
 </body>
 </html>

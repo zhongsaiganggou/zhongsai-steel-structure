@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
@@ -15,8 +15,8 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://zhongsai-steelstructure.com/zh/about.html">
 <link rel="icon" href="../images/logo-transparent.png">
-<link rel="stylesheet" href="../css/rebuild.css">
-<link rel="stylesheet" href="../css/v2.css">
+<link rel="stylesheet" href="/css/rebuild.css">
+<link rel="stylesheet" href="/css/v2.css">
 
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
@@ -39,6 +39,7 @@
 <header class="header" data-header><div class="nav-wrap">
   <a class="brand" href="/"><img src="../images/logo-transparent.png" alt="中赛钢构 LOGO" width="46" height="46"><span><b>中赛钢构</b><small>ZHONGSAI STEEL STRUCTURE</small></span></a>
   <nav class="nav" aria-label="主要导航">
+    <a href="/zh/">首页</a>
     <a href="/zh/products.html">产品</a>
     <a href="/zh/solutions.html">解决方案</a>
     <a href="/zh/components.html">构件与材料</a>
@@ -47,20 +48,22 @@
     <a href="/en/about.html" class="lang">EN</a>
   </nav>
   <div class="nav-actions">
-    <a href="/zh/contact.html" class="btn btn-small">获取报价</a>
+    <a href="/zh/contact.html#quote-form" class="btn btn-small">获取报价</a>
     <button class="menu" data-menu aria-label="打开菜单" aria-expanded="false"><i></i><i></i></button>
   </div>
 </div></header>
 
 <!-- 移动端菜单 -->
 <nav class="mobile-nav" data-mobile-nav aria-label="移动端导航">
+  <a href="/zh/">首页</a>
   <a href="/zh/products.html">产品中心</a>
   <a href="/zh/solutions.html">解决方案</a>
   <a href="/zh/components.html">构件与材料</a>
   <a href="/zh/projects.html">项目案例</a>
+  <a href="/zh/blog/">技术文章</a>
   <a href="/zh/about.html">关于中赛</a>
-  <a href="/zh/contact.html">联系我们</a>
-  <a href="/en/about.html">English</a>
+  <a href="/zh/contact.html#quote-form">联系我们</a>
+  <a href="/en/">English</a>
 </nav>
 
 <main id="main">
@@ -79,7 +82,7 @@
     <h1>中赛钢构<br>钢结构出口制造商</h1>
     <p class="lead">10万㎡生产基地，10万吨年产能，300+一线工人。从结构设计、深化出图、工厂制造到出口装柜与海外安装指导，由一支团队贯通关键环节。</p>
     <div class="page-hero-actions">
-      <a href="/zh/contact.html" class="btn-primary">获取项目报价</a>
+      <a href="/zh/contact.html#quote-form" class="btn-primary">获取项目报价</a>
       <a href="/zh/components.html" class="btn-light">查看构件与材料</a>
     </div>
   </div>
@@ -108,7 +111,11 @@
   </div>
 
   <!-- 公司历程 -->
-  <div style="margin:60px 0">
+  
+<details class="corporate-entity-info" style="margin:32px 0;padding:20px;border:1px solid var(--line);border-radius:4px;">
+<summary style="cursor:pointer;font-weight:600;color:var(--ink);font-size:16px;">公司实体信息（点击展开）</summary>
+<div style="margin-top:16px;">
+<div style="margin:60px 0">
     <div class="content-block" style="text-align:left">
       <p class="eyebrow">COMPANY HISTORY / 公司历程</p>
       <h2>家族经营的钢结构企业，从东莞工程到全球出口</h2>
@@ -141,6 +148,9 @@
     <div style="background:var(--paper);padding:24px;border-left:4px solid var(--orange)">
       <p style="margin:0;color:var(--steel);font-size:13px;line-height:1.8"><strong style="color:var(--ink)">实体说明：</strong>中赛钢构（ZhongSai Steel Structure）是家族经营企业。原公司东莞市中赛钢结构工程有限公司（2011-2021，法人阎喜政）于2021年8月注销。生产业务重组为东莞市中赛钢结构有限公司（2023年10月成立，法人阎知开，阎喜政父亲）。国际贸易业务现由深圳市中赛钢结构进出口有限公司（2024年成立，法人阎喜政）管理。所有实体共享同一家族所有权、工厂（东莞+惠州）、工程团队和质量体系。原东莞实体仍作为历史记录出现在谷歌搜索和第三方贸易数据库中。</p>
     </div>
+</div>
+</details>
+
   </div>
 
   <!-- 核心能力 -->
@@ -202,7 +212,7 @@
     <h3 style="margin:0 0 12px;font-size:18px;color:var(--ink)">了解更多中赛钢构的制造能力和服务流程</h3>
     <div style="display:flex;gap:12px;justify-content:center">
       <a href="/zh/manufacturing-quality.html" style="padding:10px 20px;background:var(--orange);color:#fff;text-decoration:none;font-size:14px;font-weight:600">查看制造能力</a>
-      <a href="/zh/contact.html" style="padding:10px 20px;background:var(--ink);color:#fff;text-decoration:none;font-size:14px;font-weight:600">联系我们</a>
+      <a href="/zh/contact.html#quote-form" style="padding:10px 20px;background:var(--ink);color:#fff;text-decoration:none;font-size:14px;font-weight:600">联系我们</a>
     </div>
   </div>
 </div></section>
@@ -223,11 +233,7 @@
       <h3>项目询价</h3>
       <form class="v2-form" data-form>
         <div class="form-status" data-status role="status" aria-live="polite"></div>
-        <div class="form-type-switch">
-          <button type="button" class="type-btn active" data-type="hasDrawings"><div class="type-text"><strong>有图纸 / BOQ</strong><small>上传图纸获取加工报价</small></div></button>
-          <button type="button" class="type-btn" data-type="noDrawings"><div class="type-text"><strong>暂无图纸</strong><small>需要设计出图方案</small></div></button>
-        </div>
-        <input type="hidden" name="customerType" value="hasDrawings">
+        
         <div class="form-row-2">
           <div class="form-group"><label>姓名 / 称呼 *</label><input name="name" required placeholder="您的姓名"></div>
           <div class="form-group"><label>项目所在国家 *</label>
@@ -419,7 +425,7 @@
       <b>中赛钢构 ZHONGSAI STEEL</b>
       <p>钢结构设计、深化、制造与出口交付</p>
       <p>10万㎡生产基地 · 10万吨年产能</p>
-      <p>服务60+国家和地区</p>
+      <p>和地区</p>
     </div>
     <div>
       <b>产品</b>
@@ -433,7 +439,9 @@
       <a href="/zh/about.html">关于中赛</a>
       <a href="/zh/projects.html">项目案例</a>
       <a href="/zh/components.html">构件与材料</a>
-      <a href="/zh/contact.html">联系我们</a>
+      <a href="/zh/blog/">技术文章</a>
+      <a href="/zh/shipments.html">出货动态</a>
+      <a href="/zh/contact.html#quote-form">联系我们</a>
     </div>
     <div>
       <b>联系</b>
@@ -454,6 +462,8 @@
   <span class="whatsapp-tooltip">WhatsApp咨询</span>
 </a>
 
-<script src="../js/v2.js"></script>
+<script src="/js/site-nav.final.v6.js" defer></script>
+<script src="/js/v2.js?v=20260902-1" defer></script>
+
 </body>
 </html>
